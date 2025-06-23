@@ -1,49 +1,119 @@
-import { features } from "@/data/features";
 import Image from "next/image";
 import React from "react";
 
 export default function FeaturesOne() {
   return (
     <section
-      className="layout-pt-xl bg-gradient position-relative overflow-hidden"
-      style={{ background: "linear-gradient(135deg, #f0f4ff, #e8f5e9)" }}
+      className="py-5"
+      style={{
+        background: "linear-gradient(135deg, #e3f0ff 0%, #f0f7fa 100%)",
+        minHeight: "100vh",
+      }}
     >
-      <div className="container position-relative z-1">
-        <div className="row justify-content-center mb-40">
-          <div className="col-auto text-center">
-            <h2 data-aos="fade-up" className="text-36 fw-700 text-dark">
-              Why Choose Ummed Club Kota?
-            </h2>
-            <p className="text-16 text-gray mt-10" data-aos="fade-up" data-aos-delay="100">
-              Discover our exclusive facilities and premium features
+      <div className="container">
+        <div className="row justify-content-center mb-5 text-center">
+          <div className="col-lg-8">
+            <h2 className="fw-bold text-dark mb-3">Vision & Mission</h2>
+            <p className="text-muted">
+              We are driven by purpose, powered by innovation.
             </p>
           </div>
         </div>
 
-        <div
-          data-aos="fade-up"
-          className="row md:x-gap-20 pt-30 sm:pt-20 mobile-css-slider -w-280"
-        >
-          {features.map((elm, i) => (
+        <div className="row g-4 justify-content-center align-items-stretch">
+          {/* Vision Card */}
+          <div className="col-md-6 mb-4 d-flex h-100">
             <div
-              key={i}
-              data-aos="zoom-in"
-              data-aos-delay={i * 100}
-              className="col-lg-3 col-sm-6 mb-30 d-flex"
+              className="card border-0 shadow-lg rounded-4 h-100 w-100"
+              style={{
+                background: "#fff",
+                border: "1px solid #d0e3ff",
+              }}
             >
-              <div className="featureCard glass-card text-center p-30 rounded-20 hover-lift w-100 d-flex flex-column justify-content-between">
-                <div>
-                  <div className="icon-wrapper mx-auto mb-20">
-                    <div className="icon-bubble bg-icon mx-auto d-flex align-items-center justify-content-center">
-                      <Image width={32} height={32} src={elm.iconSrc} alt="icon" />
-                    </div>
+              <div className="card-body p-5 d-flex flex-column">
+                <div className="d-flex align-items-center mb-4">
+                  <div
+                    className="rounded-3 d-flex align-items-center justify-content-center me-3"
+                    style={{
+                      width: "56px",
+                      height: "56px",
+                      background: "linear-gradient(135deg, #5b76f7, #678dfd)",
+                      boxShadow: "0 4px 16px rgba(91, 118, 247, 0.15)",
+                    }}
+                  >
+                    <Image
+                      src="/img/icons/vision.png"
+                      alt="Vision Icon"
+                      width={28}
+                      height={28}
+                    />
                   </div>
-                  <h3 className="text-20 fw-600 mb-10 text-dark">{elm.title}</h3>
-                  <p className="text-15 text-gray">{elm.text}</p>
+                  <h3 className="mb-0 fw-bold text-dark">Vision</h3>
+                </div>
+                <div className="flex-grow-1">
+                  <p className="text-muted mb-2">
+                    We are a customer focused company that values our customers as
+                    the foundation of our business. We facilitate our customers to
+                    build remarkable values based on information and communication
+                    services innovation.
+                  </p>
+                  <p className="text-muted mb-0">
+                    We strive to give our client's competitive edge in their
+                    respective industries through the provision of market leading
+                    communication products. We are dedicated to enhancing their
+                    service levels, improving their workplace efficiencies and
+                    increasing their productivity levels.
+                  </p>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Mission Card */}
+          <div className="col-md-6 mb-4 d-flex h-100">
+            <div
+              className="card border-0 shadow-lg rounded-4 h-100 w-100"
+              style={{
+                background: "#fff",
+                border: "1px solid #b2f0e6",
+              }}
+            >
+              <div className="card-body p-5 d-flex flex-column">
+                <div className="d-flex align-items-center mb-4">
+                  <div
+                    className="rounded-3 d-flex align-items-center justify-content-center me-3"
+                    style={{
+                      width: "56px",
+                      height: "56px",
+                      background: "linear-gradient(135deg, #00b4b0, #00d4c6)",
+                      boxShadow: "0 4px 16px rgba(0, 180, 176, 0.15)",
+                    }}
+                  >
+                    <Image
+                      src="/img/icons/mission.png"
+                      alt="Mission Icon"
+                      width={28}
+                      height={28}
+                    />
+                  </div>
+                  <h3 className="mb-0 fw-bold text-dark">Mission</h3>
+                </div>
+                <div className="flex-grow-1">
+                  <p className="text-muted mb-2">
+                    We strive to provide the most reliable and superb
+                    communication solutions that exceed customer needs by enabling
+                    us to be a preferred data solution partner.
+                  </p>
+                  <p className="text-muted mb-0">
+                    We will continue to be an independent company to create,
+                    develop and maintain the specialized city based Telecom Optic
+                    Fiber Cable Network and to be part of our national requirement
+                    to enhance economical growth path.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
