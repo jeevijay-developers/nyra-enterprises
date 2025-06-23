@@ -14,7 +14,7 @@ export default function DestinationsOne() {
         <div className="row y-gap-10 justify-between items-end">
           <div className="col-auto">
             <h2 data-aos="fade-up" className="text-30 md:text-24">
-              Shree Ummed Club Party Room's Facilities
+              Machineries and Tools
             </h2>
           </div>
 
@@ -64,9 +64,10 @@ export default function DestinationsOne() {
                     className="featureImage -type-1 text-center -hover-image-scale"
                   >
                     <div className="featureImage__image mx-auto rounded-full -hover-image-scale__image">
-                      <Image
+                      <img
                         width={260}
                         height={260}
+                        load="lazy"
                         src={elm.imageSrc}
                         alt="image"
                         className="size-130 object-cover rounded-full"

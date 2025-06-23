@@ -7,19 +7,20 @@ export default function Features9() {
   return (
     <section className="layout-pt-xl layout-pb-xl bg-accent-1-05">
       <div className="container">
-        <div className="row y-gap-30 items-center justify-between">
+        <div className="d-flex flex-column y-gap-30 items-center justify-between">
           <div className="col-xl-4 col-lg-5">
             <h2
               data-aos="fade-up"
               data-aos-delay=""
               className="text-30 md:text-24"
             >
-              Popular things to do
+              Services Offered
             </h2>
 
             <p data-aos="fade-up" data-aos-delay="" className="mt-30 md:mt-10">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ad
+              qui. Aperiam ratione, incidunt adipisci excepturi consequuntur
+              dolorem amet eius!
             </p>
 
             {/* <Link
@@ -33,10 +34,20 @@ export default function Features9() {
             </Link> */}
           </div>
 
-          <div className="col-xl-6 col-lg-7">
-            <div data-aos="fade-up" data-aos-delay="" className="row y-gap-30">
+          <div className="">
+            <div
+              data-aos="fade-up"
+              data-aos-delay=""
+              className="d-flex flex-row gap-4 flex-wrap w-full"
+            >
               {featureCards.map((elm, i) => (
-                <div key={i} className="col-md-4 col-6">
+                <div
+                  key={i}
+                  className="col-md-4 col-6"
+                  style={{
+                    height: "fit-content !important",
+                  }}
+                >
                   <a href="#" className="featureCard -type-5 -hover-accent-1">
                     <div className="featureCard__icon">
                       <Image
