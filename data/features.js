@@ -2,26 +2,26 @@ export const features = [
   {
     id: 1,
     iconSrc: "/img/icons/1/ticket.svg",
-    title: "A Legacy Since 1898",
-    text: "Established in 1898 and named after Sir Robert Crosthwaite, Shree Ummed Club Kota is one of the first 18 clubs founded before the nineteenth century. Experience history in the heart of Kota city.",
+    title: "OFC Infrastructure Leader",
+    text: "NYRA ENTERPRISES is a premier developer and service provider of Optical Fiber Cable (OFC) infrastructure, specializing in planning, design, and implementation of cutting-edge telecom networks.",
   },
   {
     id: 2,
     iconSrc: "/img/icons/1/hot-air-balloon.svg",
-    title: "Historic Grandeur Awaits",
-    text: "Spanning nearly 5 acres, Shree Ummed Club Kota boasts a majestic historic building and a library with rare seventeenth-century books. Discover a legacy that stands the test of time.",
+    title: "Smart City Innovator",
+    text: "Pioneering Mumbai's Safe City Project and nationwide Smart City initiatives, we deliver integrated solutions like CCTV surveillance, Wi-Fi networks, and enterprise data systems for urban transformation.",
   },
   {
     id: 3,
     iconSrc: "/img/icons/1/diamond.svg",
-    title: "Sports and Heritage Combined",
-    text: "Enjoy a state-of-the-art synthetic tennis court and a billiard room with a unique fixed grouted legs table, showcasing exquisite heritage-style woodwork. Experience the best of both worlds.",
+    title: "End-to-End Expertise",
+    text: "From Horizontal Directional Drilling (HDD) to O&M, our in-house capabilities include OFC laying, splicing, testing, and maintenance—backed by owned machinery and skilled teams for seamless execution.",
   },
   {
     id: 4,
     iconSrc: "/img/icons/1/medal.svg",
-    title: "Dive into History and Luxury",
-    text: "Located in the heart of Kota city, Shree Ummed Club blends historical elegance with modern amenities. From a historic library to top-notch sports facilities, it’s a destination like no other.",
+    title: "Trusted by Industry Giants",
+    text: "Recognized as a 'Best Performer' by L&T and Reliance Jio, we’ve deployed 500+ km of underground OFC, 3,000+ CCTV installations, and serve clients like Tata Projects and Sify across India.",
   },
 ];
 export const featuresFour = [
