@@ -13,40 +13,41 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    imageSrc: "/img/hero/7/8.jpg",
+    imageSrc: "/img/hero/11/1.jpg",
     subtitle:
-      "Search, compare and book 15,000+ multiday tours all over the world.",
-    title: "WELCOME TO SHREE UMMED CLUB",
+      "Building robust Optical Fiber Cable infrastructure to empower digital transformation across cities and industries.",
+    title: "WELCOME TO NYRA ENTERPRISES",
   },
   {
     id: 2,
-    imageSrc: "/img/hero/7/2.jpg",
+    imageSrc: "/img/hero/11/2.jpg",
     subtitle:
-      "Experience unforgettable moments at our exclusive events and celebrations. From cultural festivals to themed parties, we bring people together in joyous harmony.",
-    title: "Events & Celebrations",
+      "Delivering turnkey telecom solutions including Smart City projects, CCTV, and Wi-Fi installations across India.",
+    title: "Smart City & Telecom Projects",
   },
   {
     id: 3,
-    imageSrc: "/img/hero/7/3.jpg",
+    imageSrc: "/img/hero/11/3.jpg",
     subtitle:
-      "Stay active and energized with our state-of-the-art sports facilities. Whether you're into swimming, tennis, or indoor games, we have something for every fitness enthusiast.",
-    title: "Sports & Recreation",
+      "Expertise in horizontal directional drilling, trenching, splicing, and cable blowing with in-house machinery.",
+    title: "Infrastructure & Execution",
   },
   {
     id: 4,
-    imageSrc: "/img/hero/7/9.png",
+    imageSrc: "/img/hero/11/4.jpg",
     subtitle:
-      "Savor a culinary journey with our exquisite dining options. Our multi-cuisine restaurant and café offer a delightful ambiance, perfect for family gatherings and social meet-ups.",
-    title: "Dining & Hospitality",
+      "End-to-end services for OFC networks, from route survey and design to testing, integration, and long-term O&M.",
+    title: "Network Design & Maintenance",
   },
   {
     id: 5,
     imageSrc: "/img/hero/7/5.jpg",
     subtitle:
-      "Become a part of the Shree Ummed Club family. Enjoy exclusive privileges, access to premium amenities, and a community that celebrates togetherness and well-being.",
-    title: "Membership & Benefits",
+      "Partnering with top telecom and infrastructure giants like Reliance Jio and L&T to deliver excellence nationwide.",
+    title: "Trusted by Industry Leaders",
   },
 ];
+
 
 export default function Hero7() {
   useEffect(() => {
