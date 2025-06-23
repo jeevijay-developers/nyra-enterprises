@@ -33,12 +33,12 @@ export default function page() {
       <main>
         <Header1 />
         <Hero7 />
-        <FeaturesOne />
+        {/* <FeaturesOne /> */}
         <DestinationsOne />
         <PrefaceTimeline/>
         {/* <Tour1 /> */}
         <Banner />
-        <TourTypeOne />
+        {/* <TourTypeOne /> */}
         {/* <TourSlderOne /> */}
         {/* <TestimonialOne /> */}
         <BannerOne />
