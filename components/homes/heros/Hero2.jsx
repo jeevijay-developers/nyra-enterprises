@@ -94,7 +94,7 @@ export default function Hero2() {
 
       <div className="container">
         <div ref={dropDownContainer} className="hero__filter">
-          <div className="searchForm -type-1 shadow-1">
+          {/* <div className="searchForm -type-1 shadow-1">
             <div className="searchForm__form">
               <div className="searchFormItem js-select-control js-form-dd">
                 <div
@@ -180,7 +180,7 @@ export default function Hero2() {
                 Search
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="hero__slider">
@@ -253,7 +253,7 @@ export default function Hero2() {
                           Limited time offer, don't miss the opportunity
                         </p>
 
-                        <button
+                        {/* <button
                           data-aos="fade-right"
                           data-aos-delay="200"
                           className="button -md -dark-1 bg-white text-accent-1 mt-30"
@@ -262,7 +262,7 @@ export default function Hero2() {
                             <span>Book Now</span>
                             <i className="icon-arrow-top-right ml-10"></i>
                           </Link>
-                        </button>
+                        </button> */}
                       </div>
 
                       <div className="hero__image">

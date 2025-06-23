@@ -30,9 +30,9 @@ export default function Header2() {
           <div className="header__logo">
             <Link href="/" className="header__logo">
               <Image
-                width="167"
-                height="32"
-                src="/img/general/logo-1.svg"
+                width="220"
+                height="100"
+                src="/img/general/plywoodLogo3.png"
                 alt="logo icon"
                 priority
               />

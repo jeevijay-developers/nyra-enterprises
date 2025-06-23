@@ -1,5 +1,5 @@
 import React from "react";
-import Firstpage from "./(homes)/home-4/page";
+import Firstpage from "./(homes)/home-2/page";
 
 export const metadata = {
   title: "Peacockline mattress",
