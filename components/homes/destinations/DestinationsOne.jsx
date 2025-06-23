@@ -64,9 +64,10 @@ export default function DestinationsOne() {
                     className="featureImage -type-1 text-center -hover-image-scale"
                   >
                     <div className="featureImage__image mx-auto rounded-full -hover-image-scale__image">
-                      <Image
+                      <img
                         width={260}
                         height={260}
+                        load="lazy"
                         src={elm.imageSrc}
                         alt="image"
                         className="size-130 object-cover rounded-full"
