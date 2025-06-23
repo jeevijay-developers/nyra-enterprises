@@ -39,7 +39,7 @@ export default function Banner() {
                 data-aos-delay=""
                 className="text-40 md:text-30  lh-13"
               >
-                <span className="text-accent-1">About NAYRA</span>
+                <span className="text-accent-1">About NYRA</span>
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="" className="mt-10">

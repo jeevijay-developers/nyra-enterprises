@@ -54,15 +54,21 @@ export default function Header1() {
           <div className="header__logo">
             <Link href="/" className="header__logo">
               <Image
-                width="250"
-                height="50"
-                src="/img/pageHeader/nay.png"
-                // src="/img/pageHeader/logo.png"
+                width={400}
+                height={80}
+                src="/img/pageHeader/nyra.png"
                 alt="logo icon"
                 priority
+                style={{
+                  maxWidth: "300px",
+                  height: "auto",
+                  objectFit: "contain",
+                  // Responsive height for mobile
+                  maxHeight: "60px",
+                }}
+                className="header-logo-img"
               />
             </Link>
-
             {/* <div className="xl:d-none ml-30">
               <HeaderSerch />
             </div> */}
@@ -112,6 +118,23 @@ export default function Header1() {
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />
+      <style jsx global>{`
+        @media (max-width: 576px) {
+          .header__container {
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+          }
+          .header__logo {
+            max-height: 40px !important;
+            display: flex;
+            align-items: center;
+          }
+          .header-logo-img {
+            max-height: 32px !important;
+            width: auto !important;
+          }
+        }
+      `}</style>
     </>
   );
 }
