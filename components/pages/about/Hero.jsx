@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="pageHeader -type-1">
       <div className="pageHeader__bg">
-        <Image width={1800} height={500} src="/img/about/ab1.jpg" alt="image" />
+        <Image width={1800} height={500} src="/img/hero/11/1.jpg" alt="image" />
         <Image
           width="1800"
           height="40"
