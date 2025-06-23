@@ -29,7 +29,7 @@ export default function FooterOne() {
                   <div className="col-auto">
                     <div className="text-20 fw-500">
                       Contact Us{" "}
-                      <span className="text-accent-1">8233861088</span>
+                      <span className="text-accent-1">7710021111</span>
                     </div>
                   </div>
                 </div>
@@ -52,19 +52,54 @@ export default function FooterOne() {
               <div className="col-lg-4 col-md-6">
                 <h4 className="text-20 fw-500">Contact</h4>
 
-                <div className="y-gap-10 mt-20">
-                  <a className="d-block" href="#">
-                    Address: Opposite J.K. Pavallion, Near C.V. Garden,
-                    Nayapura, Kota, Rajasthan
-                  </a>
-                  <a className="d-block" href="#">
-                    <b> Contact Person 1</b> Mr. Hemraj Singh Chandrawat,
-                    Manager +91-8003352022
-                  </a>
-                  <a className="d-block" href="#">
-                    <b> Contact Person 2</b> Mr. Vijay Kumar Pandit, Accountat.
-                    +91-8233861088
-                  </a>
+                <div className="y-gap-10 mt-20" style={{ color: "#0a2259" }}>
+                  <div className="fw-bold" style={{ fontSize: "1.1rem" }}>
+                    Corporate Office:
+                  </div>
+                  <div className="fw-bold" style={{ fontSize: "1.1rem" }}>
+                    Nyra Enterprises
+                  </div>
+                  <div>
+                    13/Plot No 20, Ambe Kiran Society,
+                    <br />
+                    Sector 5, Ghansoli Navi Mumbai 400701
+                  </div>
+                  <div>
+                    Contact:{" "}
+                    <a
+                      href="tel:+917710021111"
+                      style={{ color: "#0a2259" }}
+                    >
+                      +91 7710021111
+                    </a>
+                  </div>
+                  <div>
+                    Web:{" "}
+                    <a
+                      href="http://www.nyraenterprises.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#0a2259" }}
+                    >
+                      www.nyraenterprises.com
+                    </a>
+                  </div>
+                  <div>
+                    Email:{" "}
+                    <a
+                      href="mailto:nyrajaiswal16@gmail.com"
+                      style={{ color: "#0a2259" }}
+                    >
+                      nyrajaiswal16@gmail.com
+                    </a>{" "}
+                    /{" "}
+                    <a
+                      href="mailto:info@nyraenterprises.com"
+                      style={{ color: "#0a2259" }}
+                    >
+                      info@nyraenterprises.com
+                    </a>
+                  </div>
                 </div>
               </div>
 
