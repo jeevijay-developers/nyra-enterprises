@@ -1,41 +1,104 @@
+"use client";
 import React from "react";
+import CountUp from "react-countup";
+import Image from "next/image";
 
 export default function Information() {
+  const stats = [
+    {
+      number: 1000,
+      suffix: "+",
+      label: "KM of OFC Network",
+      icon: "/img/icons/network.png",
+    },
+    {
+      number: 15,
+      suffix: "+",
+      label: "Years Experience",
+      icon: "/img/icons/experience.png",
+    },
+    {
+      number: 100,
+      suffix: "+",
+      label: "Projects Completed",
+      icon: "/img/icons/projects.png",
+    },
+    {
+      number: "",
+      suffix: "Mumbai",
+      label: "Based OFC Company",
+      icon: "/img/icons/location.png",
+    },
+  ];
+
   return (
-    <section className="layout-pt-lg">
+    <section
+      className="py-5"
+      style={{ background: "linear-gradient(to right, #e9f0fb, #edf2ff)" }}
+    >
       <div className="container">
-        <div className="row y-gap-20 justify-between">
-          <div className="col-lg-6">
-            <h2 className="text-30 fw-700">
-              Shree Ummed Club Kota: A Legacy of Heritage and Elegance
-            </h2>
-          </div>
-
-          <div className="col-lg-5">
-            <p>
-              Established in 1898 and named after Sir Robert Crosthwaite, Shree
-              Ummed Club Kota is one of the first 18 clubs founded before the
-              nineteenth century. Nestled in the heart of Kota city, the club
-              spans nearly 5 acres, featuring a grandeur historic building and a
-              historic library with a rare collection of seventeenth-century
-              books. It stands as a symbol of rich heritage and tradition,
-              preserving the charm of a bygone era.
-              <br />
-              <br />
-              Blending history with modern amenities, the club offers a
-              state-of-the-art synthetic tennis court and a billiard room with a
-              unique fixed grouted legs table adorned with exquisite
-              heritage-style woodwork. Shree Ummed Club Kota continues to be a
-              prestigious landmark, celebrating a legacy of excellence while
-              catering to contemporary leisure and community needs.
-            </p>
-
-            {/* <button className="button -md -dark-1 bg-accent-1 text-white mt-30">
-              Learn More
-            </button> */}
-          </div>
+        <div className="row g-4 justify-content-center text-center">
+          {stats.map((item, index) => (
+            <div
+              key={index}
+              className="col-md-6 col-lg-3 d-flex justify-content-center"
+            >
+              <div
+                className="card border-0 shadow-sm rounded-4 h-100 w-100 stat-card"
+                style={{
+                  background: "#fff",
+                  minWidth: "250px",
+                  maxWidth: "320px",
+                  minHeight: "260px",
+                  transition: "transform 0.3s, box-shadow 0.3s",
+                  cursor: "pointer",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform =
+                    "translateY(-10px) scale(1.04)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 32px rgba(44, 62, 80, 0.15)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "none";
+                  e.currentTarget.style.boxShadow =
+                    "0 0.5rem 1rem rgba(44, 62, 80, 0.07)";
+                }}
+              >
+                <div className="card-body py-4 d-flex flex-column align-items-center justify-content-center">
+                  <div className="mb-3">
+                    <Image
+                      src={item.icon}
+                      alt={item.label}
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                  <h3 className="fw-bold text-dark mb-2">
+                    {item.number !== "" ? (
+                      <>
+                        <CountUp end={item.number} duration={2} />
+                        {item.suffix}
+                      </>
+                    ) : (
+                      item.suffix
+                    )}
+                  </h3>
+                  <p className="text-muted mb-0">{item.label}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
+      <style jsx>{`
+        @media (max-width: 991.98px) {
+          .stat-card {
+            min-width: 90vw !important;
+            max-width: 100vw !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
