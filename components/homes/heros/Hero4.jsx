@@ -2,7 +2,6 @@
 import Calender from "@/components/common/dropdownSearch/Calender";
 import Location from "@/components/common/dropdownSearch/Location";
 import TourType from "@/components/common/dropdownSearch/TourType";
-import { FaWhatsapp } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
@@ -34,23 +33,23 @@ export default function Hero4() {
     };
   }, []);
   return (
-    <section className="-type-4 hero">
+    <section className="hero -type-4">
       <div className="hero__bg">
         <Image
           width={1920}
           height={860}
-          src="/img/new/hero.gif"
+          src="/img/hero/4/bg.png"
           alt="background"
         />
       </div>
 
       <div className="container">
         <div className="row justify-center text-center">
-          <div className="col-lg-9 col-xl-8">
+          <div className="col-xl-8 col-lg-9">
             <h1 data-aos="fade-up" data-aos-delay="100" className="hero__title">
-              Bharat&apos;s Trusted Cushion
+              Life Is Adventure Make
               <br className="md:d-none" />
-              Manufracturing Brand
+              The Best Of It
             </h1>
 
             <div
@@ -60,35 +59,45 @@ export default function Hero4() {
             >
               <div
                 ref={dropDownContainer}
-                className="d-flex flex-row align-items-center justify-content-center rounded-5 shadow-1 -type-1 background-white px-3 py-3"
-                style={{ backgroundColor: "white", borderRadius: "20px" }}
+                className="searchForm -type-1 shadow-1 rounded-200"
               >
-                <div
-                  className="d-flex flex-row align-items-center justify-content-between rounded-5 gap-3"
-                  style={{ gap: "30px" }}
-                >
-                  <div
-                    className="btn btn-primary rounded-5 text-white"
-                    style={{
-                      backgroundColor: "#007eff ! important",
-                      width: "fit-content ! important",
-                      padding: "10px 20px",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    Mattress
-                  </div>
-
-                  <div className="js-calendar js-form-dd js-select-control searchFormItem">
-                    {/* <div
+                <div className="searchForm__form">
+                  <div className="searchFormItem js-select-control js-form-dd">
+                    <div
                       className="searchFormItem__button"
                       onClick={() =>
                         setCurrentActiveDD((pre) =>
-                          pre == "calender" ? "" : "calender"
+                          pre == "location" ? "" : "location",
                         )
                       }
                     >
-                      <div className="flex-center bg-accent-1-05 rounded-full searchFormItem__icon size-50">
+                      <div className="searchFormItem__icon size-50 rounded-full bg-accent-1-05 flex-center">
+                        <i className="text-20 icon-pin"></i>
+                      </div>
+                      <div className="searchFormItem__content">
+                        <h5>Where</h5>
+                        <div className="js-select-control-chosen">
+                          {location ? location : "Search destinations"}
+                        </div>
+                      </div>
+                    </div>
+
+                    <Location
+                      setLocation={setLocation}
+                      active={currentActiveDD === "location"}
+                    />
+                  </div>
+
+                  <div className="searchFormItem js-select-control js-form-dd js-calendar">
+                    <div
+                      className="searchFormItem__button"
+                      onClick={() =>
+                        setCurrentActiveDD((pre) =>
+                          pre == "calender" ? "" : "calender",
+                        )
+                      }
+                    >
+                      <div className="searchFormItem__icon size-50 rounded-full bg-accent-1-05 flex-center">
                         <i className="text-20 icon-calendar"></i>
                       </div>
                       <div className="searchFormItem__content">
@@ -100,41 +109,44 @@ export default function Hero4() {
                           <span className="js-last-date"></span>
                         </div>
                       </div>
-                    </div> */}
-                    <div
-                      className="btn btn-primary rounded-5 text-white"
-                      style={{
-                        backgroundColor: "#007eff ! important",
-                        width: "fit-content ! important",
-                        padding: "10px 20px",
-                        borderRadius: "10px",
-                      }}
-                    >
-                      Pillows
                     </div>
                   </div>
 
-                  <div className="js-calendar js-form-dd js-select-control searchFormItem">
+                  <div className="searchFormItem js-select-control js-form-dd">
                     <div
-                      className="btn btn-primary rounded-5 text-white"
-                      style={{
-                        backgroundColor: "#007eff ! important",
-                        width: "fit-content ! important",
-                        padding: "10px 20px",
-                        borderRadius: "10px",
-                      }}
+                      className="searchFormItem__button"
+                      onClick={() =>
+                        setCurrentActiveDD((pre) =>
+                          pre == "tourType" ? "" : "tourType",
+                        )
+                      }
                     >
-                      Bedsheets and Cushions
+                      <div className="searchFormItem__icon size-50 rounded-full bg-accent-1-05 flex-center">
+                        <i className="text-20 icon-flag"></i>
+                      </div>
+                      <div className="searchFormItem__content">
+                        <h5>Tour Type</h5>
+                        <div className="js-select-control-chosen">
+                          {tourType ? tourType : "All tour"}
+                        </div>
+                      </div>
                     </div>
+
+                    <TourType
+                      setTourType={setTourType}
+                      active={currentActiveDD === "tourType"}
+                    />
                   </div>
                 </div>
 
-                {/* <div className="searchForm__button">
-                  <FaWhatsapp
-                    className="text-success fs-4"
-                    style={{ fontSize: "40px", color: "#0eff0e" }}
-                  />
-                </div> */}
+                <div className="searchForm__button">
+                  <button
+                    onClick={() => router.push("/tour-list-6")}
+                    className="button -dark-1 size-60 bg-accent-1 rounded-200 text-white"
+                  >
+                    <i className="icon-search text-16"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -9,7 +9,12 @@ export default function Banner() {
         <Image width={1530} height={600} src="/img/cta/2/bg.png" alt="image" />
 
         <div className="cta__image">
-          <Image width={750} height={600} src="/img/cta/2/1.png" alt="image" />
+          <Image
+            width={750}
+            height={600}
+            src="/img/ummed club/gallary/WhatsApp Image 2025-02-26 at 6.55.08 PM.jpeg"
+            alt="image"
+          />
           <Image
             width="40"
             height="600"
@@ -34,28 +39,32 @@ export default function Banner() {
                 data-aos-delay=""
                 className="text-40 md:text-30  lh-13"
               >
-                Grab up to <span className="text-accent-1">35% off</span>
-                <br className="lg:d-none" />
-                on your favorite
-                <br className="lg:d-none" />
-                Destination
+                <span className="text-accent-1">About Club</span>
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="" className="mt-10">
-                Limited time offer, don't miss the opportunity
+                Shree Ummed Club Kota established in year 1898 named after Sir
+                Robert Crosthwaite the last agent to the Viceroy of the
+                Rajputana. The club is among the first 18 clubs prior to
+                ninteenth century. The club is situated in the heart of Kota
+                city measuring almost 5 acres with grandeur historic building,
+                historic library having rare and historic collection of
+                seventeenth century books. It has state of art synthetic tennis
+                court. The billiard room provides unique fixed grouted legs
+                table with its heritage style woodwork.
               </p>
 
               <div className="mt-30 md:mt-20">
-                <button
+                {/* <button
                   data-aos="fade-right"
                   data-aos-delay=""
                   className="button -md -dark-1 bg-accent-1 text-white"
-                >
-                  <Link href="/tour-list-1">
+                > */}
+                {/* <Link href="/tour-list-1">
                     Book Now
                     <i className="icon-arrow-top-right ml-10 text-16"></i>
-                  </Link>
-                </button>
+                  </Link> */}
+                {/* </button> */}
               </div>
             </div>
           </div>

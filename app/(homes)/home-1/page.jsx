@@ -4,12 +4,16 @@ import BannerOne from "@/components/homes/banners/BannerOne";
 import DestinationsOne from "@/components/homes/destinations/DestinationsOne";
 import FeaturesOne from "@/components/homes/features/FeaturesOne";
 import Hero1 from "@/components/homes/heros/Hero1";
+import Hero2 from "@/components/homes/heros/Hero2";
+import Hero3 from "@/components/homes/heros/Hero3";
+import Hero4 from "@/components/homes/heros/Hero4";
 import TestimonialOne from "@/components/homes/testimonials/TestimonialOne";
 import TourTypeOne from "@/components/homes/tourTypes/TourTypeOne";
 import Tour1 from "@/components/homes/tours/Tour1";
 import TourSlderOne from "@/components/homes/tours/TourSlderOne";
 import FooterOne from "@/components/layout/footers/FooterOne";
 import Header1 from "@/components/layout/header/Header1";
+import Hero from "@/components/tours/Hero";
 
 export default function Home() {
   return (
@@ -18,13 +22,13 @@ export default function Home() {
       <Hero1 />
       <FeaturesOne />
       <DestinationsOne />
-      <Tour1 />
+      {/* <Tour1 /> */}
       <Banner />
       <TourTypeOne />
-      <TourSlderOne />
-      <TestimonialOne />
+      {/* <TourSlderOne /> */}
+      {/* <TestimonialOne /> */}
       <BannerOne />
-      <ArticlesThree />
+      {/* <ArticlesThree /> */}
       <FooterOne />
     </main>
   );

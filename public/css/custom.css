@@ -334,3 +334,77 @@ opacity: 1;
 .ButtonBooking{
   transition: 0.4s;
 }
+.size-72 {
+  width: 72px;
+  height: 72px;
+}
+@media (max-width: 768px) {
+  .size-72 {
+    width: 56px;
+    height: 56px;
+  }
+
+  .text-20 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .size-72 {
+    width: 44px;
+    height: 44px;
+  }
+
+  .text-20 {
+    font-size: 14px;
+  }
+}
+
+
+/* Feature card layout */
+.featureCard {
+  min-height: 320px; /* slightly taller for breathing room */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 40px; /* NEW: adds spacing from top */
+  text-align: center;
+}
+
+/* Glass-style card background */
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+/* Hover effect */
+.hover-lift:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon bubble styling */
+.icon-bubble {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto; /* spacing bottom */
+}
+
+/* Typography tweaks */
+.text-gray {
+  color: #666;
+}
+
+.text-dark {
+  color: #222;
+}

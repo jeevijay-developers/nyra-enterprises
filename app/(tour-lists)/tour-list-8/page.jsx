@@ -3,8 +3,8 @@ import TourList6 from "@/components/tours/TourList6";
 import React from "react";
 
 export const metadata = {
-  title: "Peacockline mattress",
-  description: "Peacockline mattress",
+  title: "Tour-list-8 || ViaTour - Travel & Tour React NextJS Template",
+  description: "ViaTour - Travel & Tour React NextJS Template",
 };
 
 export default function page() {

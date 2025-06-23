@@ -54,14 +54,18 @@ export default function Hero() {
           <div className="row justify-center">
             <div className="col-12">
               <div className="pageHeader__content">
-                <h1 className="pageHeader__title">Phuket</h1>
+                <h1 className="pageHeader__title">
+                  WELCOME TO SHREE UMMED CLUB
+                </h1>
 
                 <p className="pageHeader__text">
-                  A tropical paradise made for animal lovers replete with monkey
-                  caves, dog foundations, and dolphins in the wild.
+                  Shree Ummed Club Kota established in year 1898 named after Sir
+                  Robert Crosthwaite the last agent to the Viceroy of the
+                  Rajputana. The club is among the first 18 clubs prior to
+                  ninteenth century.
                 </p>
 
-                <div className="pageHeader__search">
+                {/* <div className="pageHeader__search">
                   <div className="searchForm -type-1 shadow-1">
                     <div ref={dropDownContainer} className="searchForm__form">
                       <div className="searchFormItem js-select-control js-form-dd">
@@ -69,7 +73,7 @@ export default function Hero() {
                           className="searchFormItem__button"
                           onClick={() =>
                             setCurrentActiveDD((pre) =>
-                              pre == "location" ? "" : "location",
+                              pre == "location" ? "" : "location"
                             )
                           }
                         >
@@ -95,7 +99,7 @@ export default function Hero() {
                           className="searchFormItem__button"
                           onClick={() =>
                             setCurrentActiveDD((pre) =>
-                              pre == "calender" ? "" : "calender",
+                              pre == "calender" ? "" : "calender"
                             )
                           }
                         >
@@ -120,7 +124,7 @@ export default function Hero() {
                           className="searchFormItem__button"
                           onClick={() =>
                             setCurrentActiveDD((pre) =>
-                              pre == "tourType" ? "" : "tourType",
+                              pre == "tourType" ? "" : "tourType"
                             )
                           }
                         >
@@ -149,7 +153,7 @@ export default function Hero() {
                       </button>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

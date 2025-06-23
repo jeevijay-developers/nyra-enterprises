@@ -7,9 +7,10 @@ import Style4 from "@/components/tours/ListStyle.jsx/Style4";
 import Style5 from "@/components/tours/ListStyle.jsx/Style5";
 import Style6 from "@/components/tours/ListStyle.jsx/Style6";
 import React from "react";
+
 export const metadata = {
-  title: "Peacockline mattress",
-  description: "Peacockline mattress",
+  title: "Tour-list-10 || ViaTour - Travel & Tour React NextJS Template",
+  description: "ViaTour - Travel & Tour React NextJS Template",
 };
 
 export default function page() {

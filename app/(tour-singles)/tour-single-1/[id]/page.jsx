@@ -1,32 +1,32 @@
-import FooterFour from "@/components/layout/footers/FooterFour";
 import FooterOne from "@/components/layout/footers/FooterOne";
 import Header1 from "@/components/layout/header/Header1";
-import Header3 from "@/components/layout/header/Header3";
 import PageHeader from "@/components/tourSingle/PageHeader";
 import TourSlider from "@/components/tourSingle/TourSlider";
 import SingleOne from "@/components/tourSingle/pages/SingleOne";
 import { allTour } from "@/data/tours";
+import facilities from "@/data/facilities";
 
 import React from "react";
 
 export const metadata = {
-  title: "Peacockline mattress",
-  description: "Peacockline mattress",
+  title: "Ummed club kota",
+  description: "ViaTour - Travel & Tour React NextJS Template",
 };
 
-export default function page({ params }) {
-  const id = params.id;
-  const tour = allTour.find((item) => item.id == id) || allTour[0];
+export default async function page({ params }) {
+  const id = await params.id;
+  const tour = facilities[id];
+  console.log(tour);
 
   return (
     <>
       <main>
-        <Header3 />
-        <PageHeader />
+        <Header1 />
+        {/* <PageHeader /> */}
 
-        <SingleOne tour={tour} id={id} />
+        <SingleOne tour={tour} />
         {/* <TourSlider /> */}
-        <FooterFour />
+        <FooterOne />
       </main>
     </>
   );

@@ -10,7 +10,7 @@ export default function Menu() {
   const pathname = usePathname();
   return (
     <>
-      <div className="ml-30 xl:d-none">
+      <div className="xl:d-none ml-30">
         <div className="desktopNav">
           <div className="desktopNav__item">
             <a
@@ -19,15 +19,15 @@ export default function Menu() {
                   ? "activeMenu"
                   : ""
               }
-              href="/"
+              href="#"
             >
-              Home
+              Home <i className="icon-chevron-down"></i>
             </a>
 
-            {/* <div className="desktopNavSubnav">
+            <div className="desktopNavSubnav">
               <div className="desktopNavSubnav__content">
                 {homes.map((elm, i) => (
-                  <div key={i} className="text-dark-1 desktopNavSubnav__item">
+                  <div key={i} className="desktopNavSubnav__item text-dark-1">
                     <Link
                       className={pathname == elm.href ? "activeMenu" : ""}
                       href={elm.href}
@@ -37,12 +37,12 @@ export default function Menu() {
                   </div>
                 ))}
               </div>
-            </div> */}
+            </div>
           </div>
 
-          {/* <div className="desktopNav__item">
+          <div className="desktopNav__item">
             <a href="#">
-              Mattress <i className="icon-chevron-down"></i>
+              Tour <i className="icon-chevron-down"></i>
             </a>
 
             <div className="desktopNavMega">
@@ -68,7 +68,7 @@ export default function Menu() {
                 </div>
 
                 <div className="desktopNavMega__info">
-                  <div className="row specialCardGrid y-gap-30">
+                  <div className="specialCardGrid row y-gap-30">
                     <div className="col-12">
                       <div className="specialCard">
                         <div className="specialCard__image">
@@ -119,25 +119,25 @@ export default function Menu() {
                 </div>
               </div>
             </div>
-          </div> */}
-
-          <div className="desktopNav__item">
-            <Link href="/tour-single-1/2">Pillows</Link>
           </div>
 
           <div className="desktopNav__item">
-            <Link href="/tour-single-1/4">Bedsheets and Cushions</Link>
+            <Link href="/destinations">Destination</Link>
+          </div>
+
+          <div className="desktopNav__item">
+            <a href="#">Activities</a>
           </div>
 
           <div className="desktopNav__item">
             <a href="#">
-              Mattress <i className="icon-chevron-down"></i>
+              Pages <i className="icon-chevron-down"></i>
             </a>
 
             <div className="desktopNavSubnav">
               <div className="desktopNavSubnav__content">
                 {pages.map((elm, i) => (
-                  <div key={i} className="text-dark-1 desktopNavSubnav__item">
+                  <div key={i} className="desktopNavSubnav__item text-dark-1">
                     {elm.href ? (
                       <Link href={elm.href}>{elm.title}</Link>
                     ) : (

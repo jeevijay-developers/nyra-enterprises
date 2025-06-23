@@ -1,21 +1,38 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 const currencies = [
-  "USD",
-  "Euro",
-  "British Pound",
-  "Turkish Lira",
-  "Canadian Dollar",
-  "Australian Dollar",
-  "Swiss Franc",
-  "Singapore Dollar",
+  {
+    title: "Facility",
+    location: "/tour-list-6",
+  },
+  {
+    title: "Events",
+    location: "/events",
+  },
+  {
+    title: "About",
+    location: "/about",
+  },
+  {
+    title: "Club Gallary",
+    location: "/clubGallary",
+  },
+  {
+    title: "Event Gallary",
+    location: "/eventGallary",
+  },
+  {
+    title: "Contact Us",
+    location: "/contact",
+  },
 ];
 
 export default function Currency({ parentClass }) {
   const [currentdd, setCurrentdd] = useState("");
-  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+  const [selectedCurrency, setSelectedCurrency] = useState("select");
   const dropDownContainer = useRef();
   useEffect(() => {
     const handleClick = (event) => {
@@ -54,20 +71,19 @@ export default function Currency({ parentClass }) {
         } `}
       >
         <div className="headerDropdown">
-          <div className="headerDropdown__container">
+          <ul className="headerDropdown__container">
             {currencies.map((elm, i) => (
-              <div
-                onClick={() => {
-                  setSelectedCurrency(elm);
-                  setCurrentdd("");
-                }}
-                key={i}
-                className="headerDropdown__item"
-              >
-                <button className="">{elm}</button>
-              </div>
+              <li key={i}>
+                <Link
+                  key={i}
+                  className="headerDropdown__item"
+                  href={elm.location}
+                >
+                  <button className="">{elm.title}</button>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </div>

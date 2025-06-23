@@ -3,42 +3,23 @@ import Reviews from "./Reviews";
 import CommentBox from "./CommentBox";
 import Image from "next/image";
 
-export default function BlogSingle() {
+export default function BlogSingle({ blog }) {
   return (
     <>
       <section className="layout-pt-md layout-pb-xl">
         <div className="container">
           <div className="row y-gap-30 justify-center">
             <div className="col-lg-8">
-              <h2 className="text-30 md:text-24">The Brazen Head</h2>
-              <p className="mt-20">
-                Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida.
-                Diam phasellus vestibulum lorem sed risus ultricies. Magna sit
-                amet purus gravida quis blandit. Arcu cursus vitae congue
-                mauris. Nunc mattis enim ut tellus elementum sagittis vitae et
-                leo. Semper risus in hendrerit gravida rutrum quisque non. At
-                urna condimentum mattis pellentesque id nibh tortor. A erat nam
-                at lectus urna duis convallis convallis tellus. Sit amet mauris
-                commodo quis imperdiet massa. Vitae congue eu consequat ac
-                felis.
-              </p>
+              <h2 className="text-30 md:text-24">{blog.blog.bhead}</h2>
+              <p className="mt-20">{blog.blog.blogPara1}</p>
 
               <ul className="ulList2 mt-20">
-                <li>
-                  Sed viverra ipsum nunc aliquet bibendum enim facilisis
-                  gravida.
-                </li>
-                <li>
-                  At urna condimentum mattis pellentesque id nibh. Laoreet non
-                  curabitur
-                </li>
-                <li>Magna etiam tempor orci eu lobortis elementum.</li>
-                <li>
-                  Bibendum est ultricies integer quis. Semper eget duis at
-                  tellus.
-                </li>
+                {blog.blog.list &&
+                  blog.blog.list.map((item, i) => {
+                    return <li key={i}>{item}</li>;
+                  })}
               </ul>
-
+              {/* 
               <div className="blockquote bg-accent-1-05 rounded-12 px-30 py-30 mt-20">
                 <div className="blockquote__icon">
                   <svg
@@ -60,80 +41,40 @@ export default function BlogSingle() {
                   Magna sit amet purus gravida quis blandit. Arcu cursus vitae
                   congue mauris.“
                 </div>
-              </div>
+              </div> */}
 
-              <p className="mt-20">
-                Donec purus posuere nullam lacus aliquam egestas arcu. A egestas
-                a, tellus massa, ornare vulputate. Erat enim eget laoreet
-                ullamcorper lectus aliquet nullam tempus id. Dignissim convallis
-                quam aliquam rhoncus, lectus nullam viverra. Bibendum dignissim
-                tortor, phasellus pellentesque commodo, turpis vel eu. Donec
-                consectetur ipsum nibh lobortis elementum mus velit tincidunt
-                elementum. Ridiculus eu convallis eu mattis iaculis et, in
-                dolor. Sem libero, tortor suspendisse et, purus euismod posuere
-                sit. Risus dui ut viverra venenatis ipsum tincidunt non, proin.
-                Euismod pharetra sit ac nisi. Erat lacus, amet quisque urna
-                faucibus. Rhoncus praesent faucibus rhoncus nec adipiscing
-                tristique sed facilisis velit.
-                <br />
-                <br />
-                Neque nulla porta ut urna rutrum. Aliquam cursus arcu tincidunt
-                mus dictum sit euismod cum id. Dictum integer ultricies arcu
-                fermentum fermentum sem consectetur. Consectetur eleifend aenean
-                eu neque euismod amet parturient turpis vitae. Faucibus ipsum
-                felis et duis fames.
-              </p>
+              <p className="mt-20">{blog.blog.blogPara2}</p>
 
               <div className="row y-gap-30 pt-20">
                 <div className="col-md-6">
                   <Image
                     width={410}
                     height={350}
-                    src="/img/blogSingle/1.png"
+                    src={blog.blog.bImage1}
                     alt="image"
                     className="rounded-8"
                   />
-                  <div className="mt-10">
+                  {/* <div className="mt-10">
                     Donec purus posuere nullam lacus aliquam.
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="col-md-6">
                   <Image
                     width={410}
                     height={350}
-                    src="/img/blogSingle/2.png"
+                    src={blog.blog.bImage2}
                     alt="image"
                     className="rounded-8"
                   />
-                  <div className="mt-10">
+                  {/* <div className="mt-10">
                     Donec purus posuere nullam lacus aliquam.
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
-              <p className="mt-20">
-                Donec purus posuere nullam lacus aliquam egestas arcu. A egestas
-                a, tellus massa, ornare vulputate. Erat enim eget laoreet
-                ullamcorper lectus aliquet nullam tempus id. Dignissim convallis
-                quam aliquam rhoncus, lectus nullam viverra. Bibendum dignissim
-                tortor, phasellus pellentesque commodo, turpis vel eu. Donec
-                consectetur ipsum nibh lobortis elementum mus velit tincidunt
-                elementum. Ridiculus eu convallis eu mattis iaculis et, in
-                dolor. Sem libero, tortor suspendisse et, purus euismod posuere
-                sit. Risus dui ut viverra venenatis ipsum tincidunt non, proin.
-                Euismod pharetra sit ac nisi. Erat lacus, amet quisque urna
-                faucibus. Rhoncus praesent faucibus rhoncus nec adipiscing
-                tristique sed facilisis velit.
-                <br />
-                <br />
-                Neque nulla porta ut urna rutrum. Aliquam cursus arcu tincidunt
-                mus dictum sit euismod cum id. Dictum integer ultricies arcu
-                fermentum fermentum sem consectetur. Consectetur eleifend aenean
-                eu neque euismod amet parturient turpis vitae. Faucibus ipsum
-                felis et duis fames.
-              </p>
-
+              <p className="mt-20">{blog.blog.blogPara3}</p>
+              {/* 
               <div className="row y-gap-15 justify-between items-center pt-20">
                 <div className="col-auto">
                   <div className="d-flex x-gap-10">
@@ -191,9 +132,9 @@ export default function BlogSingle() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="line mt-60 mb-30"></div>
+              {/* <div className="line mt-60 mb-30"></div>
 
               <div className="row y-gap-20">
                 <div className="col-auto">
@@ -216,11 +157,11 @@ export default function BlogSingle() {
                     lacus.
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="line mt-30 mb-30"></div>
+              {/* <div className="line mt-30 mb-30"></div> */}
 
-              <div className="row y-gap-15 justify-between">
+              {/* <div className="row y-gap-15 justify-between">
                 <div className="col-md-auto">
                   <div className="d-flex">
                     <div className="pt-5">
@@ -271,9 +212,9 @@ export default function BlogSingle() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="line mt-30 mb-30"></div>
+              {/* <div className="line mt-30 mb-30"></div>
 
               <h2 className="text-30 mt-30">Customer Reviews</h2>
 
@@ -284,7 +225,7 @@ export default function BlogSingle() {
                 <i className="icon-arrow-top-right text-16 ml-10"></i>
               </button>
 
-              <CommentBox />
+              <CommentBox /> */}
             </div>
           </div>
         </div>

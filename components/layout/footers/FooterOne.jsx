@@ -28,8 +28,8 @@ export default function FooterOne() {
 
                   <div className="col-auto">
                     <div className="text-20 fw-500">
-                      Speak to our expert at
-                      <span className="text-accent-1">1-800-453-6744</span>
+                      Contact Us{" "}
+                      <span className="text-accent-1">8233861088</span>
                     </div>
                   </div>
                 </div>
@@ -54,17 +54,23 @@ export default function FooterOne() {
 
                 <div className="y-gap-10 mt-20">
                   <a className="d-block" href="#">
-                    328 Queensberry Street, North Melbourne VIC3051, Australia.
+                    Address: Opposite J.K. Pavallion, Near C.V. Garden,
+                    Nayapura, Kota, Rajasthan
                   </a>
                   <a className="d-block" href="#">
-                    hi@viatours.com
+                    <b> Contact Person 1</b> Mr. Hemraj Singh Chandrawat,
+                    Manager +91-8003352022
+                  </a>
+                  <a className="d-block" href="#">
+                    <b> Contact Person 2</b> Mr. Vijay Kumar Pandit, Accountat.
+                    +91-8233861088
                   </a>
                 </div>
               </div>
 
-              <FooterLinks />
+              {/* <FooterLinks /> */}
 
-              <div className="col-lg-3 col-md-6">
+              {/* <div className="col-lg-3 col-md-6">
                 <h4 className="text-20 fw-500">Newsletter</h4>
                 <p className="mt-20">
                   Subscribe to the free newsletter and stay up to date
@@ -88,13 +94,13 @@ export default function FooterOne() {
                     Android App
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <div className="footer__bottom">
           <div className="row y-gap-5 justify-between items-center">
             <div className="col-auto">
@@ -108,7 +114,7 @@ export default function FooterOne() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }

@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 
 const buttonData = [
@@ -349,7 +348,6 @@ export default function Destinations() {
   const [currentdestinationTab, setCurrentdestinationTab] = useState("Europe");
   const [currentdd, setCurrentdd] = useState("");
   const dropDownContainer = useRef();
-  const router = useRouter();
   useEffect(() => {
     const handleClick = (event) => {
       if (
@@ -375,14 +373,12 @@ export default function Destinations() {
       <div
         className="headerDropdown__button "
         onClick={() =>
-          router.push("/")
-          // setCurrentdd((pre) => (pre == "destination" ? "" : "destination"))
+          setCurrentdd((pre) => (pre == "destination" ? "" : "destination"))
         }
       >
-        Home
-        {/* <i className="icon-chevron-down text-18"></i> */}
+        Destinations
+        <i className="icon-chevron-down text-18"></i>
       </div>
-      
 
       <div
         className={`headerDropdown__content ${

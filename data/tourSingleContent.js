@@ -1,16 +1,16 @@
 export const included = [
-  { id: 1, text: "Free shipping on all mattresses" },
-  { id: 2, text: "100-night risk-free trial" },
-  { id: 3, text: "10-year warranty for lasting comfort" },
-  { id: 4, text: "Eco-friendly and hypoallergenic materials" },
-  { id: 5, text: "Financing options available" },
-  { id: 6, text: "24/7 customer support for all inquiries" },
+  { id: 1, text: "Beverages, drinking water, morning tea and buffet lunch" },
+  { id: 2, text: "Local taxes" },
+  { id: 3, text: "Hotel pickup and drop-off by air-conditioned minivan" },
+  { id: 4, text: "InsuranceTransfer to a private pier" },
+  { id: 5, text: "Soft drinks" },
+  { id: 6, text: "Tour Guide" },
 ];
 
 export const excluded = [
-  { id: 7, text: "Bed frame or foundation (sold separately)" },
-  { id: 8, text: "Old mattress removal (available at an extra cost)" },
-  { id: 9, text: "Custom-sized mattresses (only standard sizes available)" },
+  { id: 7, text: "Towel" },
+  { id: 8, text: "Tips" },
+  { id: 9, text: "Alcoholic Beverages" },
 ];
 
 export const roadmapData = [
@@ -77,24 +77,24 @@ export const roadmapData2 = [
 
 export const faqData = [
   {
-    question: "What types of mattresses do you offer?",
+    question: "Can I get the refund?",
     answer:
-      "We offer a variety of mattresses, including memory foam, hybrid, latex, and innerspring, designed to suit different sleep preferences.",
+      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
   },
   {
-    question: "How do I choose the right mattress for me?",
+    question: "Can I change the travel date?",
     answer:
-      "Choosing the right mattress depends on your sleeping position, firmness preference, and any specific needs like back support or cooling features. If you need help, our sleep experts can guide you!",
+      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
   },
   {
-    question: "Do your mattresses come with a trial period?",
+    question: "When and where does the tour end?",
     answer:
-      "Yes! We offer a 100-night risk-free trial so you can test your mattress at home. If it’s not the perfect fit, we’ll help you with a hassle-free return.",
+      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
   },
   {
-    question: "What is the warranty on your mattresses?",
+    question: "Do you arrange airport transfers?",
     answer:
-      "Our mattresses come with a 10-year limited warranty covering manufacturing defects and sagging beyond normal wear.",
+      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
   },
 ];
 

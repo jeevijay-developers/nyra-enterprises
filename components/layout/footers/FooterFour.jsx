@@ -19,7 +19,7 @@ export default function FooterFour() {
                   <div className="col-auto">
                     <div className="text-20 fw-500 text-white text-white">
                       Speak to our expert at
-                      <span className="text-white"> +91 7014003729</span>
+                      <span className="text-white">1-800-453-6744</span>
                     </div>
                   </div>
                 </div>
@@ -49,17 +49,18 @@ export default function FooterFour() {
 
                   <div className="y-gap-10 mt-20 text-white">
                     <a className="d-block" href="#">
-                      G-298, IPIA Bhamashamandi, Kota , Rajasthan
+                      328 Queensberry Street, North Melbourne VIC3051,
+                      Australia.
                     </a>
                     <a className="d-block" href="#">
-                      Shivanksolanki@gmail.com
+                      hi@viatours.com
                     </a>
                   </div>
                 </div>
 
-                {/* <FooterLinksTwo /> */}
+                <FooterLinksTwo />
 
-                {/* <div className="col-lg-3 col-md-6">
+                <div className="col-lg-3 col-md-6">
                   <h4 className="text-20 fw-500 text-white">Newsletter</h4>
                   <p className="text-white mt-20">
                     Subscribe to the free newsletter and stay up to date
@@ -88,7 +89,7 @@ export default function FooterFour() {
                       Android App
                     </a>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -100,9 +101,7 @@ export default function FooterFour() {
           <div className="footer__bottom">
             <div className="row y-gap-5 justify-between items-center">
               <div className="col-auto text-white">
-                <div>
-                  © Copyright Peacock Line Mattress {new Date().getFullYear()}
-                </div>
+                <div>© Copyright Viatours {new Date().getFullYear()}</div>
               </div>
 
               <div className="col-auto">

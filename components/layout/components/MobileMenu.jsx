@@ -10,6 +10,32 @@ const socialMediaLinks = [
   { id: 3, class: "icon-instagram", href: "#" },
   { id: 4, class: "icon-linkedin", href: "#" },
 ];
+const currencies = [
+  {
+    title: "Facility",
+    location: "/tour-list-6",
+  },
+  {
+    title: "Events",
+    location: "/events",
+  },
+  {
+    title: "About",
+    location: "/about",
+  },
+  {
+    title: "Club Gallary",
+    location: "/clubGallary",
+  },
+  {
+    title: "Event Gallary",
+    location: "/eventGallary",
+  },
+  {
+    title: "Contact Us",
+    location: "/contact",
+  },
+];
 export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
   const [activeSub, setActiveSub] = useState("");
   const pathname = usePathname();
@@ -46,78 +72,50 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
             className="menuNav js-navList -is-active"
             style={{ maxHeight: "calc(100vh - 262px)", overflowY: "auto" }}
           >
-            <li className="menuNav__item">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="menuNav__item">
-              <Link href="/tour-single-1/2">Pillows</Link>
-            </li>
-            <li className="menuNav__item">
-              <Link href="/tour-single-1/4">Bedsheets and Cushions</Link>
-            </li>
-            {menuData.map((elm, i) => (
+            {currencies.map((elm, i) => (
               <li key={i} className="menuNav__item -has-submenu js-has-submenu">
-                <a
-                  onClick={() =>
-                    setActiveSub((prev) =>
-                      prev === elm.label ? "" : elm.label
-                    )
-                  }
-                >
-                  <span
-                    className={
-                      elm.submenu.some((sub) => sub.href === pathname)
-                        ? "activeMenu"
-                        : ""
-                    }
-                  >
-                    {elm.label}
-                  </span>
-                  <i
-                    style={{
-                      transform:
-                        activeSub === elm.label
-                          ? "rotate(90deg)"
-                          : "rotate(0deg)",
-                      transition: "0.3s",
-                    }}
-                    className="icon-chevron-right"
-                  ></i>
-                </a>
+                <Link href={elm.location}>
+                  <span>{elm.title}</span>
+                </Link>
 
                 <ul
-                  style={{
-                    maxHeight: activeSub === elm.label ? "1200px" : "0px",
-                    transition: "0.6s",
-                  }}
+                  style={
+                    activeSub == elm.label
+                      ? { maxHeight: "1200px", transition: "0.6s" }
+                      : { maxHeight: "0px", transition: "0.6s" }
+                  }
                 >
-                  {elm.submenu.map((elm2, i2) => (
+                  {/* {elm.submenu.map((elm2, i2) => (
                     <li key={i2} className="">
                       <Link
-                        className={pathname === elm2.href ? "activeMenu" : ""}
+                        className={
+                          pathname.split("/")[1] == elm2.href?.split("/")[1]
+                            ? "activeMenu"
+                            : ""
+                        }
                         style={{ paddingLeft: "15px", fontSize: "17px" }}
                         href={elm2.href}
                       >
                         {elm2.label}
                       </Link>
                     </li>
-                  ))}
+                  ))} */}
                 </ul>
               </li>
             ))}
 
-            <li className="menuNav__item">
+            {/* <li className="menuNav__item">
               <Link href="/contact">Contact</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
-        <div className="menu__footer">
+        {/* <div className="menu__footer">
           <i className="icon-headphone text-50"></i>
 
           <div className="text-20 lh-12 fw-500 mt-20">
             <div>Speak to our expert at</div>
-            <div className="text-accent-1">+91 7014003729</div>
+            <div className="text-accent-1">1-800-453-6744</div>
           </div>
 
           <div className="d-flex items-center x-gap-10 pt-30">
@@ -129,7 +127,7 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -3,8 +3,8 @@ import React from "react";
 
 export default function BannerOne() {
   return (
-    <section className="cta -type-1">
-      <div className="cta__bg">
+    <section className="cta -type-1 mt-30">
+      {/* <div className="cta__bg">
         <Image width={1530} height={500} src="/img/cta/1/bg.png" alt="image" />
       </div>
 
@@ -70,7 +70,7 @@ export default function BannerOne() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

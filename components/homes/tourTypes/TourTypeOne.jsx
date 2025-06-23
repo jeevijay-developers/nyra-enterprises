@@ -14,7 +14,7 @@ export default function TourTypeOne() {
               data-aos-delay=""
               className="text-30 md:text-24"
             >
-              Popular things to do 
+              Popular things to do
             </h2>
           </div>
 
@@ -37,26 +37,8 @@ export default function TourTypeOne() {
           className="grid -type-1 pt-40 sm:pt-20"
         >
           {destinationsSix.map((elm, i) => (
-            // <Link
-            //   href={"/tour-list-1"}
-            //   key={i}
-            //   className="featureCard -type-1 -hover-1 overflow-hidden rounded-12 px-30 py-30"
-            // >
-            //   <div className="featureCard__image">
-            //     <Image
-            //       width={780}
-            //       height={780}
-            //       style={{ objectFit: "cover" }}
-            //       src={elm.imgSrc}
-            //       alt="image"
-            //     />
-            //   </div>
-
-            //   <div className="featureCard__content">
-            //     <h4 className="text-white">{elm.title}</h4>
-            //   </div>
-            // </Link>
-            <div
+            <section
+              key={i}
               className="featureCard -type-1 -hover-1 overflow-hidden rounded-12 px-30 py-30"
             >
               <div className="featureCard__image">
@@ -72,7 +54,7 @@ export default function TourTypeOne() {
               <div className="featureCard__content">
                 <h4 className="text-white">{elm.title}</h4>
               </div>
-            </div>
+            </section>
           ))}
         </div>
       </div>

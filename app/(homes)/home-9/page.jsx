@@ -12,9 +12,10 @@ import Header8 from "@/components/layout/header/Header8";
 import React from "react";
 
 export const metadata = {
-  title: "Peacockline mattress",
-  description: "Peacockline mattress",
+  title: "Home-9 || ViaTour - Travel & Tour React NextJS Template",
+  description: "ViaTour - Travel & Tour React NextJS Template",
 };
+
 export default function page() {
   return (
     <>

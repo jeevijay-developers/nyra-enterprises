@@ -4,8 +4,8 @@ import Hero1 from "@/components/blogs/Hero1";
 import BlogList2 from "@/components/blogs/BlogList2";
 
 export const metadata = {
-  title: "Peacockline mattress",
-  description: "Peacockline mattress",
+  title: "Blog-list-2 || ViaTour - Travel & Tour React NextJS Template",
+  description: "ViaTour - Travel & Tour React NextJS Template",
 };
 
 export default function page() {
@@ -13,8 +13,8 @@ export default function page() {
     <>
       <main>
         <Header1 />
-        <Hero1 />
-        <BlogList2 />
+        {/* <Hero1 /> */}
+        {/* <BlogList2 /> */}
         <FooterOne />
       </main>
     </>

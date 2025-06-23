@@ -71,44 +71,42 @@ export const testimonialsThree = [
   {
     id: 1,
     imgSrc: "/img/avatars/2/1.jpg",
-    name: "— Amit Sharma,",
-    role: "Hotel Chain Owner",
+    name: "Ali Tufan",
+    role: "Product Manager, Apple Inc.",
     comment:
-      "Peacock Line Mattress has been an incredible partner in providing premium sleep solutions for our hospitality business. The quality of their mattresses is , and our guests frequently compliment the comfort. Their B2B support team is responsive and understands our needs perfectly",
+      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
   },
   {
     id: 2,
     imgSrc: "/img/avatars/2/2.jpg",
-    name: "Rohit Mehta,",
-    role: "Retail Partner",
+    name: "Ali Tufan",
+    role: "Product Manager, Apple Inc.",
     comment:
-      "As a retailer, having a reliable supplier is crucial. Peacock Line Mattress has not only" +
-      "provided us with high-quality products but also excellent customer service. The variety of" +
-      "mattresses and sleep accessories cater to all types of customers, making it easy to grow our sales",
+      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
   },
   {
     id: 3,
     imgSrc: "/img/avatars/2/3.jpg",
-    name: "Suresh Patel",
-    role: "Furniture Store Owner",
+    name: "Ali Tufan",
+    role: "Product Manager, Apple Inc.",
     comment:
-      "Working with Peacock Line Mattress has been a game-changer for our furniture store. Their innovative sleep solutions and commitment to quality have helped us  our customers the best in comfort. We highly recommend them to any business looking to expand their product line!",
+      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
   },
   {
     id: 4,
     imgSrc: "/img/avatars/2/4.jpg",
-    name: "Neha Gupta",
-    role: "Happy Customer",
+    name: "Ali Tufan",
+    role: "Product Manager, Apple Inc.",
     comment:
-      "After switching to a Peacock Line Mattress, I’ve experienced the best sleep of my life! The memory foam mattress is incredibly supportive and has relieved my back pain completely. Highly recommended",
+      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
   },
   {
     id: 5,
     imgSrc: "/img/avatars/2/5.jpg",
-    name: "— Rahul Verma",
-    role: "Satisfied Buyer.",
+    name: "Ali Tufan",
+    role: "Product Manager, Apple Inc.",
     comment:
-      "I bought a spring mattress and pillows from Peacock Line Mattress, and they are amazing! The quality is premium, and the comfort level is outstanding. Their customer service was",
+      "The tours in this website are great. I had been really enjoy with my family! The team is very professional and taking care of the customers. Will surely recommend to my freind to join this company!",
   },
 ];
 

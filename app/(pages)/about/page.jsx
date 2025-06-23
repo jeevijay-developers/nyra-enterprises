@@ -12,8 +12,8 @@ import Team from "@/components/pages/about/Team";
 import React from "react";
 
 export const metadata = {
-  title: "Peacockline mattress",
-  description: "Peacockline mattress",
+  title: "Ummed club kota",
+  description: "",
 };
 
 export default function page() {
@@ -23,15 +23,15 @@ export default function page() {
         <Header1 />
         <Hero />
         <Information />
-        <Banner />
+        {/* <Banner /> */}
         <FeaturesOne />
-        <div className="mt-60">
+        {/* <div className="mt-60">
           <FeturesTwo />
         </div>
         <TestimonialOne />
-        <BannerOne />
-        <Team />
-        <BrandsOne />
+        <BannerOne /> */}
+        {/* <Team />
+        <BrandsOne /> */}
         <FooterOne />
       </main>
     </>

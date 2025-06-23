@@ -12,8 +12,8 @@ import Header3 from "@/components/layout/header/Header3";
 import React from "react";
 
 export const metadata = {
-  title: "Peacockline mattress",
-  description: "Peacockline mattress",
+  title: "Home-4 || ViaTour - Travel & Tour React NextJS Template",
+  description: "ViaTour - Travel & Tour React NextJS Template",
 };
 
 export default function page() {
@@ -24,15 +24,12 @@ export default function page() {
         <Hero4 />
         <PopulerDestinations />
         <FeaturesOne />
-        {/* <div className="mt-50">
-          <FeaturedToures />
-        </div> */}
-
         <div className="mt-50">
-          <TrendingDestinationsTwo />
+          <FeaturedToures />
         </div>
+        <TrendingDestinationsTwo />
         <TestimonialsThree />
-        {/* <ArticlesOne /> */}
+        <ArticlesOne />
         <BannerSeven />
         <FooterFour />
       </main>

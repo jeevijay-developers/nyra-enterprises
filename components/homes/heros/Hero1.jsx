@@ -37,7 +37,16 @@ export default function Hero1() {
   return (
     <section className="hero -type-1">
       <div className="hero__bg">
-        <Image width={1800} height={560} src="/img/hero/1/1.png" alt="image" />
+        <Image
+          width={1800}
+          height={560}
+          src="/img/hero/1/banner_img.jpg"
+          alt="image"
+          style={{
+            width: "100% !important",
+            height: "auto !important",
+          }}
+        />
         <Image
           width="1800"
           height="40"
@@ -56,7 +65,7 @@ export default function Hero1() {
                 data-aos-delay="100"
                 className="hero__title"
               >
-                Your world of joy
+                Shree Ummed Club Kota
               </h1>
 
               <p
@@ -64,8 +73,10 @@ export default function Hero1() {
                 data-aos-delay="300"
                 className="hero__text"
               >
-                From local escapes to far-flung adventures, find what makes you
-                happy anytime, anywhere
+                Shree Ummed Club Kota established in year 1898 named after Sir
+                Robert Crosthwaite the last agent to the Viceroy of the
+                Rajputana. The club is among the first 18 clubs prior to
+                ninteenth century.
               </p>
 
               <div
@@ -74,7 +85,7 @@ export default function Hero1() {
                 data-aos-delay="300"
                 className="mt-60 md:mt-35"
               >
-                <div className="searchForm -type-1">
+                {/* <div className="searchForm -type-1">
                   <div className="searchForm__form">
                     <div className="searchFormItem js-select-control js-form-dd">
                       <div
@@ -164,7 +175,7 @@ export default function Hero1() {
                       Search
                     </button>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

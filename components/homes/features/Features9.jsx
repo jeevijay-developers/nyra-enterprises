@@ -22,7 +22,7 @@ export default function Features9() {
               but the majority have suffered alteration in some form.
             </p>
 
-            <Link
+            {/* <Link
               href={"/tour-list-1"}
               data-aos="fade-right"
               data-aos-delay=""
@@ -30,7 +30,7 @@ export default function Features9() {
             >
               See All
               <i className="icon-arrow-top-right ml-10"></i>
-            </Link>
+            </Link> */}
           </div>
 
           <div className="col-xl-6 col-lg-7">
@@ -48,7 +48,7 @@ export default function Features9() {
                     </div>
 
                     <h4 className="text-18 fw-500 mt-20">{elm.title}</h4>
-                    <div className="lh-13 mt-5">{elm.tourCount}+ Tours</div>
+                    {/* <div className="lh-13 mt-5">{elm.tourCount}+ Tours</div> */}
                   </a>
                 </div>
               ))}

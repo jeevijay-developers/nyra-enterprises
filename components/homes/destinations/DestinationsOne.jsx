@@ -14,11 +14,11 @@ export default function DestinationsOne() {
         <div className="row y-gap-10 justify-between items-end">
           <div className="col-auto">
             <h2 data-aos="fade-up" className="text-30 md:text-24">
-              Trending destinations
+              Shree Ummed Club Party Room's Facilities
             </h2>
           </div>
 
-          <div data-aos="fade-up" className="col-auto">
+          {/* <div data-aos="fade-up" className="col-auto">
             <Link
               href={"/tour-list-1"}
               className="buttonArrow d-flex items-center "
@@ -26,7 +26,7 @@ export default function DestinationsOne() {
               <span>See all</span>
               <i className="icon-arrow-top-right text-16 ml-10"></i>
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div
@@ -76,9 +76,9 @@ export default function DestinationsOne() {
                     <h3 className="featureImage__title text-16 fw-500 mt-20">
                       {elm.name}
                     </h3>
-                    <p className="featureImage__text text-14">
+                    {/* <p className="featureImage__text text-14">
                       {elm.tourCount}+ Tours
-                    </p>
+                    </p> */}
                   </a>
                 </SwiperSlide>
               ))}

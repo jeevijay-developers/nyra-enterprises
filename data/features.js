@@ -2,26 +2,26 @@ export const features = [
   {
     id: 1,
     iconSrc: "/img/icons/1/ticket.svg",
-    title: " Scientifically Engineered for Comfort",
-    text: "– Our mattresses are designed using cutting-edge sleep technology.",
+    title: "A Legacy Since 1898",
+    text: "Established in 1898 and named after Sir Robert Crosthwaite, Shree Ummed Club Kota is one of the first 18 clubs founded before the nineteenth century. Experience history in the heart of Kota city.",
   },
   {
     id: 2,
     iconSrc: "/img/icons/1/hot-air-balloon.svg",
-    title: "Premium Quality Materials",
-    text: "Only the best materials go into our products for durability and comfort. ",
+    title: "Historic Grandeur Awaits",
+    text: "Spanning nearly 5 acres, Shree Ummed Club Kota boasts a majestic historic building and a library with rare seventeenth-century books. Discover a legacy that stands the test of time.",
   },
   {
     id: 3,
     iconSrc: "/img/icons/1/diamond.svg",
-    title: "Personalized Sleep Solutions ",
-    text: "A variety of options to cater to different sleep needs",
+    title: "Sports and Heritage Combined",
+    text: "Enjoy a state-of-the-art synthetic tennis court and a billiard room with a unique fixed grouted legs table, showcasing exquisite heritage-style woodwork. Experience the best of both worlds.",
   },
   {
     id: 4,
     iconSrc: "/img/icons/1/medal.svg",
-    title: "Trusted by Thousands",
-    text: " Our growing network of satisfied customers is proof of our excellence",
+    title: "Dive into History and Luxury",
+    text: "Located in the heart of Kota city, Shree Ummed Club blends historical elegance with modern amenities. From a historic library to top-notch sports facilities, it’s a destination like no other.",
   },
 ];
 export const featuresFour = [
