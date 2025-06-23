@@ -11,10 +11,7 @@ const socialMediaLinks = [
   { id: 4, class: "icon-linkedin", href: "#" },
 ];
 const currencies = [
-  {
-    title: "Facility",
-    location: "/tour-list-6",
-  },
+ 
   {
     title: "Services",
     location: "/services",

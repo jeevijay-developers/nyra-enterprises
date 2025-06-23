@@ -56,7 +56,7 @@ export default function Header1() {
               <Image
                 width="250"
                 height="50"
-                src="/img/pageHeader/1.jpg"
+                src="/img/pageHeader/nay.png"
                 // src="/img/pageHeader/logo.png"
                 alt="logo icon"
                 priority
