@@ -14,13 +14,14 @@ export default function Features9() {
               data-aos-delay=""
               className="text-30 md:text-24"
             >
-              Services Offered
+              Our Comprehensive Services
             </h2>
 
             <p data-aos="fade-up" data-aos-delay="" className="mt-30 md:mt-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ad
-              qui. Aperiam ratione, incidunt adipisci excepturi consequuntur
-              dolorem amet eius!
+              NYRA ENTERPRISES delivers end-to-end telecom infrastructure
+              solutions, from OFC network deployment to smart city integrations.
+              With 500+ km of fiber laid and 3,000+ CCTV installations, we bring
+              technical excellence to every project.
             </p>
 
             {/* <Link
