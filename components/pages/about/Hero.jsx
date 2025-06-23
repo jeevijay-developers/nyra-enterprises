@@ -22,10 +22,8 @@ export default function Hero() {
               <h1 className="pageHeader__title">About Us</h1>
 
               <p className="pageHeader__text">
-                Shree Ummed Club Kota established in year 1898 named after Sir
-                Robert Crosthwaite the last agent to the Viceroy of the
-                Rajputana. The club is among the first 18 clubs prior to
-                ninteenth century.
+                A customer-focused telecommunications infrastructure company
+                building remarkable value through innovation and excellence
               </p>
             </div>
           </div>

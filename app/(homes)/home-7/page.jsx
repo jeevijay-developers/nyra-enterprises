@@ -15,6 +15,7 @@ import TestimonialOne from "@/components/homes/testimonials/TestimonialOne";
 import PopulerTours from "@/components/homes/tours/PopulerTours";
 import TourSlider4 from "@/components/homes/tours/TourSlider4";
 import TourTypeOne from "@/components/homes/tourTypes/TourTypeOne";
+import PrefaceTimeline from "@/components/layout/components/preface/Preface";
 import FooterFive from "@/components/layout/footers/FooterFive";
 import FooterOne from "@/components/layout/footers/FooterOne";
 import Header1 from "@/components/layout/header/Header1";
@@ -34,6 +35,7 @@ export default function page() {
         <Hero7 />
         <FeaturesOne />
         <DestinationsOne />
+        <PrefaceTimeline/>
         {/* <Tour1 /> */}
         <Banner />
         <TourTypeOne />
