@@ -4,17 +4,12 @@ import React from "react";
 
 export default function Banner() {
   return (
-    <section className="cta -type-2">
+    <section className="cta -type-2 container-lg">
       <div className="cta__bg">
         <Image width={1530} height={500} src="/img/cta/2/bg.png" alt="image" />
 
         <div className="cta__image">
-          <Image
-            width={750}
-            height={600}
-            src="/img/nayra/opticalfibre.jpg"
-            alt="image"
-          />
+          <Image width={750} height={600} src="/img/nayra/2.png" alt="image" />
           <Image
             width="40"
             height="600"
@@ -43,20 +38,11 @@ export default function Banner() {
               </h2>
 
               <p data-aos="fade-up" data-aos-delay="" className="mt-10">
-                We specialize in owning, installing, commissioning, and
-                maintaining OFC networks. Our expertise extends to integrated
-                campus solutions, including network infrastructure, data
-                centers, and camera systems tailored for buildings,
-                universities, office campuses, and factories. We handle CCTV
-                surveillance projects, network setups, and operations and
-                maintenance (O&M). Additionally, we provide enterprise data
-                solutions and essential IT supplies. Our services encompass OFC
-                turnkey and telecom projects, FTTX rollouts, and comprehensive
-                O&M for intra-city and intercity OFC networks for telecom
-                companies. We also deliver last-mile customer link solutions and
-                in-building connectivity. Furthermore, we offer advanced
-                underground infrastructure solutions for the oil and power
-                sectors, as well as for smart city initiatives.
+                We provide end-to-end OFC network solutions, including
+                installation, O&M, FTTX rollouts, and telecom projects. Our
+                services cover data centers, CCTV, IT supplies, smart city
+                infrastructure, and in-building connectivity for campuses,
+                factories, and telecom sectors.
               </p>
 
               <div className="mt-30 md:mt-20">

@@ -13,41 +13,40 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    imageSrc: "/img/hero/11/1.jpg",
+    imageSrc: "/img/hero/11/6.jpg",
     subtitle:
       "Building robust Optical Fiber Cable infrastructure to empower digital transformation across cities and industries.",
     title: "WELCOME TO NYRA ENTERPRISES",
   },
   {
     id: 2,
-    imageSrc: "/img/hero/11/2.jpg",
+    imageSrc: "/img/hero/11/7.jpg",
     subtitle:
       "Delivering turnkey telecom solutions including Smart City projects, CCTV, and Wi-Fi installations across India.",
     title: "Smart City & Telecom Projects",
   },
   {
     id: 3,
-    imageSrc: "/img/hero/11/3.jpg",
+    imageSrc: "/img/hero/11/1.png",
     subtitle:
       "Expertise in horizontal directional drilling, trenching, splicing, and cable blowing with in-house machinery.",
     title: "Infrastructure & Execution",
   },
   {
     id: 4,
-    imageSrc: "/img/hero/11/4.jpg",
+    imageSrc: "/img/hero/11/2.png",
     subtitle:
       "End-to-end services for OFC networks, from route survey and design to testing, integration, and long-term O&M.",
     title: "Network Design & Maintenance",
   },
   {
     id: 5,
-    imageSrc: "/img/hero/7/5.jpg",
+    imageSrc: "/img/hero/11/3.png",
     subtitle:
       "Partnering with top telecom and infrastructure giants like Reliance Jio and L&T to deliver excellence nationwide.",
     title: "Trusted by Industry Leaders",
   },
 ];
-
 
 export default function Hero7() {
   useEffect(() => {
@@ -140,7 +139,6 @@ export default function Hero7() {
     </section>
   );
 }
-
 
 /* Old code */
 // "use client";

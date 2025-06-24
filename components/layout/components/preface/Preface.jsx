@@ -48,7 +48,7 @@ const prefaceItems = [
 
 const Preface = () => {
   return (
-    <section className={styles.section}>
+    <section className={`${styles.section} container-lg`}>
       <h2 className={styles.title}>
         <span>📘</span> Company Preface
       </h2>
