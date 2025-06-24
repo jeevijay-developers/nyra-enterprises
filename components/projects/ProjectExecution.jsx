@@ -68,6 +68,7 @@ const ProjectExecution = () => {
             </div>
             {/* Text */}
             <div className="flex-grow-1">
+              <h2 className="mb-3 fw-bold text-primary">Best Practices</h2>
               <h4 className="fw-bold text-primary mb-4">
                 Fiber Optic Splicing & Quality
               </h4>
