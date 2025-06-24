@@ -7,7 +7,7 @@ export default function BannerFour() {
       {/* Background Image */}
       <div className="sectionBg relative">
         <Image
-          src="/img/features/1/7.jpg"
+          src="/img/features/1/9.png"
           width={1920}
           height={700}
           alt="NYRA Enterprises - OFC Network"
@@ -24,16 +24,16 @@ export default function BannerFour() {
             <h2
               data-aos="fade-up"
               data-aos-delay="300"
-              className=" text-lg text-white sm:text-sm mt-4 bg-black bg-opacity-50 px-6 py-3 rounded-md"
+              className="text-3xl text-white sm:text-xl mt-4 font-bold banner-text-shadow"
             >
               Building Smart, Secure Infrastructure
             </h2>
             <p
               data-aos="fade-up"
               data-aos-delay="500"
-              className="text-gray-200 text-lg sm:text-sm mt-4 bg-black bg-opacity-50 px-6 py-3 rounded-md"
+              className="text-white text-lg sm:text-base mt-4 banner-text-shadow"
             >
-              <span className="font-bold text-white">
+              <span className="font-semibold">
                 From OFC network development to Smart City integration—
                 <br />
                 NYRA Enterprises delivers scalable, reliable, and future-ready
