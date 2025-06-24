@@ -10,14 +10,26 @@ const BusinessActivities = () => {
       <div className="row g-4 text-center">
         {[
           { src: "/img/nyraOfc/opticalfiber.jpg", label: "Optical Fiber" },
-          { src: "/img/nyraOfc//internetconnectivity.jpg", label: "Internet Connectivity" },
-          { src: "/img/nyraOfc/wirelessconnectivity.jpg", label: "Wireless Connectivity" },
-          { src: "/img/nyraOfc//vpn.jpg", label: "VPN Branch Office Connectivity" },
-          { src: "/img/nyraOfc/wiredconnectivity.jpg", label: "Wired Connectivity" },
+          {
+            src: "/img/nyraOfc//internetconnectivity.jpg",
+            label: "Internet Connectivity",
+          },
+          {
+            src: "/img/nyraOfc/wirelessconnectivity.jpg",
+            label: "Wireless Connectivity",
+          },
+          {
+            src: "/img/nyraOfc//vpn.jpg",
+            label: "VPN Branch Office Connectivity",
+          },
+          {
+            src: "/img/nyraOfc/wiredconnectivity.jpg",
+            label: "Wired Connectivity",
+          },
         ].map((item, index) => (
           <div key={index} className="col-md-4">
-            <div className="card h-100 shadow-sm border-0">
-              <img src={item.src} className="card-img-top rounded" alt={item.label} />
+            <div className="card h-100 shadow-sm border-0 business-card">
+              <img src={item.src} className="card-img-top" alt={item.label} />
               <div className="card-body">
                 <p className="card-text fw-semibold">{item.label}</p>
               </div>

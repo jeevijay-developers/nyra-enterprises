@@ -11,3 +11,30 @@
 .business-activities-section ul li {
   line-height: 1.6;
 }
+
+.business-card {
+  border-radius: 1.2rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 260px;      /* Decreased width */
+  min-width: 200px;      /* Optional: set a minimum width */
+  margin: 0 auto;        /* Center the card */
+  height: 180px;         /* Decreased height */
+  display: flex;
+  flex-direction: column;
+}
+
+.business-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+}
+
+.business-card .card-img-top {
+  width: 100%;
+  height: 150px;         /* Decreased image height */
+  object-fit: cover;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+}
