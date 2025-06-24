@@ -30,7 +30,7 @@ const SupplyOfMaterial = () => {
                     </div>
                     <div className="row solutions-list">
                         {solutions.map((solution, index) => (
-                            <div  className="col-lg-6 col-12">
+                            <div key={index} className="col-lg-6 col-12">
                                 <div className="solution-item d-flex align-items-start my-3">
                                     <span className="check-icon">✓</span>
                                     <p className="solution-text">{solution}</p>
