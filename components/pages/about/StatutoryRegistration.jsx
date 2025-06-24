@@ -28,8 +28,8 @@ const StatutoryRegistration = () => {
           </div>
 
           {/* Right: Image Grid */}
-          <div className="col-md-6 text-center">
-            <div className="d-flex flex-wrap justify-content-center gap-3">
+          <div className="col-md-6">
+            <div className="d-flex flex-wrap justify-content-center align-items-center gap-4 reg-img-grid">
               <img
                 src="/img/nyraOfc/incometax.jpg"
                 alt="Income Tax"
