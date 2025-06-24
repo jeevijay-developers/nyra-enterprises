@@ -1,0 +1,84 @@
+/* MachineriesAndTools.module.css */
+.container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tableContainer {
+  display: flex;
+  flex-direction: row;
+}
+.imageContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  margin-bottom: 1rem;
+  color: #05073c;
+  text-align: center;
+}
+
+.table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .table {
+    width: 95%;
+    font-size: 0.9rem;
+
+  }
+  .tableContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+  .imageContainer {
+    flex-direction: row;
+    /* flex-wrap: wrap;  */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+    padding-left: 0;
+    margin-top: 1rem;
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+}
