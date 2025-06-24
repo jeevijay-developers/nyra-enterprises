@@ -22,7 +22,7 @@ export const metadata = {
 export default function page() {
   return (
     <>
-      <main>
+      <main className="container-lg">
         <Header1 />
         <Hero />
         <Information />
