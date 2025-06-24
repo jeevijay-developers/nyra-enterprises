@@ -1,6 +1,6 @@
 // components/MachineriesAndTools.js
 import React from "react";
-import styles from "./MachineriesAndTools.module.css";
+// import styles from "./MachineriesAndTools.module.css";
 import Image from "next/image";
 
 const MachineriesAndTools = () => {
@@ -37,7 +37,7 @@ const MachineriesAndTools = () => {
             ))}
           </tbody>
         </table>
-       
+
         <div className={styles.imageContainer}>
           <Image
             src="/img/nyra/1.jpeg"

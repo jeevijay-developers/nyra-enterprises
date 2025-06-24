@@ -1,51 +1,51 @@
-'use client'
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Image from 'next/image';
+"use client";
+import React from "react";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from "next/image";
 
 const SupplyOfMaterial = () => {
-    const solutions = [
-        "HDPE Ducts, PVC & UPVC Conduit Pipe & Fitting",
-        "Optical Fiber Cable(6F,12F,24F,48F,96F,144F & More",
-        "Fiber Joint Closures",
-        "Fiber Management System",
-        "Fiber Patch Cord",
-        "Pigtail/Adapter",
-        "Pre Cast Chambers",
-        "Route Makers",
-        "Couplers",
-        "End Plugs",
-        "Simplex Plug",
-        "Warning Tape",
-    ];
+  const solutions = [
+    "HDPE Ducts, PVC & UPVC Conduit Pipe & Fitting",
+    "Optical Fiber Cable(6F,12F,24F,48F,96F,144F & More",
+    "Fiber Joint Closures",
+    "Fiber Management System",
+    "Fiber Patch Cord",
+    "Pigtail/Adapter",
+    "Pre Cast Chambers",
+    "Route Makers",
+    "Couplers",
+    "End Plugs",
+    "Simplex Plug",
+    "Warning Tape",
+  ];
 
-    return (
-        <>
-            <section className="solution-section">
-                <div className="container container-custom">
-                    <div className="row">
-                        <div className="col-12">
-                            <h2 className="section-title">Supply of Material</h2>
-                        </div>
-                    </div>
-                    <div className="row solutions-list">
-                        {solutions.map((solution, index) => (
-                            <div key={index} className="col-md-6 col-12">
-                                <div className="solution-item d-flex align-items-start my-3">
-                                    <span className="check-icon">✓</span>
-                                    <p className="solution-text">{solution}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+  return (
+    <>
+      <section className="solution-section">
+        <div className="container container-custom">
+          <div className="row">
+            <div className="col-12">
+              <h2 className="section-title">Supply of Material</h2>
+            </div>
+          </div>
+          <div className="row solutions-list">
+            {solutions.map((solution, index) => (
+              <div key={index} className="col-md-6 col-12">
+                <div className="solution-item d-flex align-items-start my-3">
+                  <span className="check-icon">✓</span>
+                  <p className="solution-text">{solution}</p>
                 </div>
-            </section>
-            <style jsx>{`
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <style jsx>{`
         .solution-section {
           background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
           padding: 100px 0;
           position: relative;
-        }        
+        }
         .section-title {
           font-size: 2.5rem;
           font-weight: 700;
@@ -54,16 +54,16 @@ const SupplyOfMaterial = () => {
           position: relative;
           text-align: center;
         }
-        
+
         .section-title::after {
-          content: '';
+          content: "";
           display: block;
           width: 80px;
           height: 3px;
           background: #007bff;
           margin: 1rem auto 0;
         }
-        
+
         .hero-image-container {
           position: relative;
           border-radius: 12px;
@@ -72,7 +72,7 @@ const SupplyOfMaterial = () => {
           height: 100%;
           min-height: 150px;
         }
-        
+
         .hero-image {
           width: 100%;
           height: 100%;
@@ -86,8 +86,8 @@ const SupplyOfMaterial = () => {
           font-size: 1.2rem;
           position: relative;
         }
-        img{
-            max-width:none;
+        img {
+          max-width: none;
         }
         .gear-icon {
           position: absolute;
@@ -96,19 +96,19 @@ const SupplyOfMaterial = () => {
           top: 20%;
           left: 15%;
         }
-        
+
         .gear-icon:nth-child(2) {
           font-size: 3rem;
           top: 60%;
           left: 70%;
         }
-        
+
         .gear-icon:nth-child(3) {
           font-size: 2.5rem;
           top: 40%;
           right: 20%;
         }
-        
+
         .finger-pointer {
           position: absolute;
           color: rgba(255, 255, 255, 0.9);
@@ -118,13 +118,13 @@ const SupplyOfMaterial = () => {
           transform: translate(-50%, -50%);
           z-index: 2;
         }
-        
+
         .solutions-list {
           list-style: none;
           padding: 0;
           margin: 0;
         }
-        
+
         .solution-item {
           background: white;
           margin-bottom: 1.5rem;
@@ -135,18 +135,18 @@ const SupplyOfMaterial = () => {
           position: relative;
           transition: all 0.2s ease;
         }
-        
+
         .solution-item:hover {
           box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
         }
-        
+
         .check-icon {
           color: #28a745;
           font-size: 1.2rem;
           margin-right: 1rem;
           font-weight: bold;
         }
-        
+
         .solution-text {
           color: #495057;
           font-size: 1rem;
@@ -154,39 +154,39 @@ const SupplyOfMaterial = () => {
           margin: 0;
           font-weight: 500;
         }
-        
+
         .container-custom {
           max-width: 1200px;
         }
-        
+
         @media (max-width: 768px) {
           .section-title {
             font-size: 2rem;
           }
-          
+
           .hero-image {
             height: 200px;
           }
-          
+
           .solution-item {
             padding: 1.2rem 1.5rem;
           }
-          
+
           .gear-icon {
             font-size: 3rem;
           }
-          
+
           .gear-icon:nth-child(2) {
             font-size: 2.5rem;
           }
-          
+
           .gear-icon:nth-child(3) {
             font-size: 2rem;
           }
         }
       `}</style>
-        </>
-    );
+    </>
+  );
 };
 
 export default SupplyOfMaterial;

@@ -1,64 +1,64 @@
-'use client'
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Image from 'next/image';
+"use client";
+import React from "react";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from "next/image";
 
 const SolutionProvided = () => {
-    const solutions = [
-        "Planning, Design and implementation of passive network",
-        "Physical survey to identify cross junction and understand criticality.",
-        "Identification of hardware and systems to effectively fit the budget of local governance authority.",
-        "Directed and advice the concerned committee for technical aspects of the projects.",
-        "Complete execution of project in given timeline as System and Network integrator.",
-        "Maintaining the same network to serve the object of project for long term."
-    ];
+  const solutions = [
+    "Planning, Design and implementation of passive network",
+    "Physical survey to identify cross junction and understand criticality.",
+    "Identification of hardware and systems to effectively fit the budget of local governance authority.",
+    "Directed and advice the concerned committee for technical aspects of the projects.",
+    "Complete execution of project in given timeline as System and Network integrator.",
+    "Maintaining the same network to serve the object of project for long term.",
+  ];
 
-    return (
-        <>
-            <section className="solution-section">
-                <div className="container container-custom">
-                    <div className="row">
-                        <div className="col-12">
-                            <h2 className="section-title">Solution Provided</h2>
-                        </div>
-                    </div>
+  return (
+    <>
+      <section className="solution-section">
+        <div className="container container-custom">
+          <div className="row">
+            <div className="col-12">
+              <h2 className="section-title">Solution Provided</h2>
+            </div>
+          </div>
 
-                    <div className="row align-items-center">
-                        <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
-                            <div className="hero-image-container">
-                                <div className="hero-image">
-                                    <Image
-                                        src={'/service_img/solution.png'}
-                                        width={550}
-                                        height={300}
-                                        alt='solution'
-                                        className='object-fit-contain'
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-7 col-md-6">
-                            <ul className="solutions-list">
-                                <li className="solution-item">
-                                    {solutions.map((solution, index) => (
-                                        <div key={index} className="d-flex align-items-start my-3">
-                                            <span className="check-icon">✓</span>
-                                            <p className="solution-text">{solution}</p>
-                                        </div>
-                                    ))}
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+          <div className="row align-items-center">
+            <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
+              <div className="hero-image-container">
+                <div className="hero-image">
+                  <Image
+                    src={"/service_img/solution.png"}
+                    width={550}
+                    height={300}
+                    alt="solution"
+                    className="object-fit-contain"
+                  />
                 </div>
-            </section>
-                    <style jsx>{`
+              </div>
+            </div>
+
+            <div className="col-lg-7 col-md-6">
+              <ul className="solutions-list">
+                <li className="solution-item">
+                  {solutions.map((solution, index) => (
+                    <div key={index} className="d-flex align-items-start my-3">
+                      <span className="check-icon">✓</span>
+                      <p className="solution-text">{solution}</p>
+                    </div>
+                  ))}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style jsx>{`
         .solution-section {
           background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
           padding: 100px 0;
           position: relative;
-        }        
+        }
         .section-title {
           font-size: 2.5rem;
           font-weight: 700;
@@ -67,16 +67,16 @@ const SolutionProvided = () => {
           position: relative;
           text-align: center;
         }
-        
+
         .section-title::after {
-          content: '';
+          content: "";
           display: block;
           width: 80px;
           height: 3px;
           background: #007bff;
           margin: 1rem auto 0;
         }
-        
+
         .hero-image-container {
           position: relative;
           border-radius: 12px;
@@ -85,7 +85,7 @@ const SolutionProvided = () => {
           height: 100%;
           min-height: 150px;
         }
-        
+
         .hero-image {
           width: 100%;
           height: 100%;
@@ -99,8 +99,8 @@ const SolutionProvided = () => {
           font-size: 1.2rem;
           position: relative;
         }
-        img{
-            max-width:none;
+        img {
+          max-width: none;
         }
         .gear-icon {
           position: absolute;
@@ -109,19 +109,19 @@ const SolutionProvided = () => {
           top: 20%;
           left: 15%;
         }
-        
+
         .gear-icon:nth-child(2) {
           font-size: 3rem;
           top: 60%;
           left: 70%;
         }
-        
+
         .gear-icon:nth-child(3) {
           font-size: 2.5rem;
           top: 40%;
           right: 20%;
         }
-        
+
         .finger-pointer {
           position: absolute;
           color: rgba(255, 255, 255, 0.9);
@@ -131,13 +131,13 @@ const SolutionProvided = () => {
           transform: translate(-50%, -50%);
           z-index: 2;
         }
-        
+
         .solutions-list {
           list-style: none;
           padding: 0;
           margin: 0;
         }
-        
+
         .solution-item {
           background: white;
           margin-bottom: 1.5rem;
@@ -148,19 +148,19 @@ const SolutionProvided = () => {
           position: relative;
           transition: all 0.2s ease;
         }
-        
+
         .solution-item:hover {
           transform: translateY(-2px);
           box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
         }
-        
+
         .check-icon {
           color: #28a745;
           font-size: 1.2rem;
           margin-right: 1rem;
           font-weight: bold;
         }
-        
+
         .solution-text {
           color: #495057;
           font-size: 1rem;
@@ -168,39 +168,39 @@ const SolutionProvided = () => {
           margin: 0;
           font-weight: 500;
         }
-        
+
         .container-custom {
           max-width: 1200px;
         }
-        
+
         @media (max-width: 768px) {
           .section-title {
             font-size: 2rem;
           }
-          
+
           .hero-image {
             height: 200px;
           }
-          
+
           .solution-item {
             padding: 1.2rem 1.5rem;
           }
-          
+
           .gear-icon {
             font-size: 3rem;
           }
-          
+
           .gear-icon:nth-child(2) {
             font-size: 2.5rem;
           }
-          
+
           .gear-icon:nth-child(3) {
             font-size: 2rem;
           }
         }
       `}</style>
-        </>
-    );
+    </>
+  );
 };
 
 export default SolutionProvided;
