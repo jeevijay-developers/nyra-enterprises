@@ -10,6 +10,7 @@ import React from "react";
 const page = () => {
   return (
     <main
+      className="bg-dark-subtle p-2"
       style={{
         marginTop: "100px",
       }}
