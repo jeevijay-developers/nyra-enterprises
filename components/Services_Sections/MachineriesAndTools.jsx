@@ -1,6 +1,7 @@
 // components/MachineriesAndTools.js
 import React from "react";
 import styles from "./MachineriesAndTools.module.css";
+import Image from "next/image";
 
 const MachineriesAndTools = () => {
   const data = [
@@ -18,7 +19,7 @@ const MachineriesAndTools = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.heading}>Machineries and Tools</h2>
+      <h2 className={styles.sectiontitle}>Machineries and Tools</h2>
       <div className={styles.tableContainer}>
         <table className={styles.table}>
           <thead>
@@ -36,16 +37,22 @@ const MachineriesAndTools = () => {
             ))}
           </tbody>
         </table>
+       
         <div className={styles.imageContainer}>
-          <img
+          <Image
             src="/img/nyra/1.jpeg"
             alt="Machinery Tools"
             className={styles.image}
+            width={500} // You need to specify width and height
+            height={300} // Adjust these values as needed
+            // You can also add layout="responsive" if you want responsive behavior
           />
-          <img
+          <Image
             src="/img/nyra/2.jpeg"
             alt="Machinery Tools"
             className={styles.image}
+            width={500}
+            height={300}
           />
         </div>
       </div>

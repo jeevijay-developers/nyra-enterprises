@@ -1,6 +1,6 @@
 /* MachineriesAndTools.module.css */
 .container {
-  padding: 2rem;
+  padding: 6rem;
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,22 @@
   border-collapse: collapse;
   margin: 0 auto; /* Center the table horizontally */
 }
-
+.sectiontitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  position: relative;
+  text-align: center;
+}
+.sectiontitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #007bff;
+  margin: 1rem auto 0;
+}
 .table th,
 .table td {
   padding: 0.75rem 1rem;
