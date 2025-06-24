@@ -212,7 +212,7 @@ function MyComponent() {
     <div className="map relative mt-header ml-60 mr-60 md:ml-0 md:mr-0">
       {/* {isLoaded ? ( */}
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.3780965201368!2d75.85222117595245!3d25.190468731972057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f9b02e120fffd%3A0x39d389ca1b05ad95!2sJ.K%20Pavilion%20Stadium%20Kota!5e0!3m2!1sen!2sin!4v1740641664334!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3769.6728164309384!2d72.9998268!3d19.1220042!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c109b197e305%3A0x168a0697cfb0ce55!2sNo!5e0!3m2!1sen!2sin!4v1750690412696!5m2!1sen!2sin"
         width="100%"
         height="450"
         // style="border:0;"
