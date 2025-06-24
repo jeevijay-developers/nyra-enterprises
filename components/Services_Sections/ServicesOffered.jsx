@@ -34,11 +34,20 @@ const ServicesOffered = () => {
                 <div className="hero-image-container">
                   <div className="hero-image">
                     <Image
-                      src="/img/nyra/1.jpeg"
+                      src="/img/nyra/3.jpg"
                       width={550}
                       height={300}
                       alt="solution"
-                      className="object-fit-contain"
+                      className="object-fit-cover"
+                    />
+                  </div>
+                  <div className="hero-image">
+                    <Image
+                      src="/img/nyra/4.jpeg"
+                      width={550}
+                      height={300}
+                      alt="solution"
+                      className="object-fit-cover"
                     />
                   </div>
                 </div>
@@ -99,7 +108,8 @@ const ServicesOffered = () => {
             width: 100%;
             height: 100%;
             min-height: 280px;
-            object-fit: contain;
+            object-fit: cover;
+            overflow:hidden;
             background: linear-gradient(135deg, #fff 0%, #fff 100%);
             display: flex;
             align-items: center;
