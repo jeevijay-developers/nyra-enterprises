@@ -8,7 +8,7 @@ export default function FeaturesOne() {
       className="py-5 py-md-10"
       style={{
         background: "linear-gradient(135deg, #e3f0ff 0%, #f0f7fa 100%)",
-        minHeight: "100vh",
+        // minHeight: "100vh",
         paddingTop: "3rem",
         paddingBottom: "3rem",
       }}
