@@ -4,9 +4,9 @@ const CompletedProjects = () => {
   return (
     <div className="container-md">
       <h1>Project Completed Successfully</h1>
-      <div class="table-responsive">
-        <table class="table table-bordered table-striped align-middle">
-          <thead class="table-dark bg-black text-white">
+      <div className="table-responsive">
+        <table className="table table-bordered table-striped align-middle">
+          <thead className="table-dark bg-black text-white">
             <tr>
               <th>Nature of Activity</th>
               <th>Project Details</th>
