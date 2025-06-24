@@ -33,23 +33,28 @@ export default function Information() {
 
   return (
     <section
-      className="py-5"
-      style={{ background: "linear-gradient(to right, #e9f0fb, #edf2ff)" }}
+      className="py-8 py-md-10"
+      style={{
+        background: "linear-gradient(to right, #e9f0fb, #edf2ff)",
+        paddingTop: "3rem",
+        paddingBottom: "3rem",
+      }}
     >
       <div className="container">
         <div className="row g-4 justify-content-center text-center">
           {stats.map((item, index) => (
             <div
               key={index}
-              className="col-md-6 col-lg-3 d-flex justify-content-center"
+              className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center"
             >
               <div
                 className="card border-0 shadow-sm rounded-4 h-100 w-100 stat-card"
                 style={{
                   background: "#fff",
-                  minWidth: "250px",
+                  minWidth: "220px",
                   maxWidth: "320px",
-                  minHeight: "260px",
+                  minHeight: "220px",
+                  borderRadius: "2rem", // More rounded
                   transition: "transform 0.3s, box-shadow 0.3s",
                   cursor: "pointer",
                 }}
@@ -94,8 +99,21 @@ export default function Information() {
       <style jsx>{`
         @media (max-width: 991.98px) {
           .stat-card {
-            min-width: 90vw !important;
-            max-width: 100vw !important;
+            min-width: 80vw !important;
+            max-width: 90vw !important;
+            min-height: 180px !important;
+          }
+        }
+        @media (max-width: 575.98px) {
+          .stat-card {
+            min-width: 95vw !important;
+            max-width: 98vw !important;
+            min-height: 150px !important;
+            border-radius: 1.5rem !important;
+          }
+          section {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
           }
         }
       `}</style>

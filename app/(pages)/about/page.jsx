@@ -6,8 +6,11 @@ import TestimonialOne from "@/components/homes/testimonials/TestimonialOne";
 import FooterOne from "@/components/layout/footers/FooterOne";
 import Header1 from "@/components/layout/header/Header1";
 import Banner from "@/components/pages/about/Banner";
+import BusinessActivities from "@/components/pages/about/BusinessActivities";
+import CoreStrength from "@/components/pages/about/CoreStrength";
 import Hero from "@/components/pages/about/Hero";
 import Information from "@/components/pages/about/Information";
+import StatutoryRegistration from "@/components/pages/about/StatutoryRegistration";
 import Team from "@/components/pages/about/Team";
 import React from "react";
 
@@ -25,6 +28,9 @@ export default function page() {
         <Information />
         {/* <Banner /> */}
         <FeaturesOne />
+        <CoreStrength />
+        <BusinessActivities />
+        <StatutoryRegistration />
         {/* <div className="mt-60">
           <FeturesTwo />
         </div>

@@ -1,0 +1,13 @@
+.business-activities-section {
+  background-color: #eff5fc;
+  border-left: 5px solid #ec1b3a;
+}
+
+.business-activities-section .card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.business-activities-section ul li {
+  line-height: 1.6;
+}

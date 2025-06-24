@@ -1,18 +1,21 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 
 export default function FeaturesOne() {
   return (
     <section
-      className="py-5"
+      className="py-5 py-md-10"
       style={{
         background: "linear-gradient(135deg, #e3f0ff 0%, #f0f7fa 100%)",
         minHeight: "100vh",
+        paddingTop: "3rem",
+        paddingBottom: "3rem",
       }}
     >
       <div className="container">
         <div className="row justify-content-center mb-5 text-center">
-          <div className="col-lg-8">
+          <div className="col-lg-8 py-10">
             <h2 className="fw-bold text-dark mb-3">Vision & Mission</h2>
             <p className="text-muted">
               We are driven by purpose, powered by innovation.
@@ -24,10 +27,14 @@ export default function FeaturesOne() {
           {/* Vision Card */}
           <div className="col-md-6 mb-4 d-flex h-100">
             <div
-              className="card border-0 shadow-lg rounded-4 h-100 w-100"
+              className="card border-0 feature-card h-100 w-100"
               style={{
                 background: "#fff",
                 border: "1px solid #d0e3ff",
+                borderRadius: "2rem", // More rounded
+                boxShadow: "0 4px 24px rgba(44, 62, 80, 0.10)", // Box shadow
+                transition: "transform 0.3s, box-shadow 0.3s",
+                cursor: "pointer",
               }}
             >
               <div className="card-body p-5 d-flex flex-column">
@@ -72,10 +79,14 @@ export default function FeaturesOne() {
           {/* Mission Card */}
           <div className="col-md-6 mb-4 d-flex h-100">
             <div
-              className="card border-0 shadow-lg rounded-4 h-100 w-100"
+              className="card border-0 feature-card h-100 w-100"
               style={{
                 background: "#fff",
-                border: "1px solid #b2f0e6",
+                border: "1px solid #b2f0e6", // Unique border color for Mission
+                borderRadius: "2rem", // More rounded
+                boxShadow: "0 4px 24px rgba(44, 62, 80, 0.10)", // Box shadow
+                transition: "transform 0.3s, box-shadow 0.3s",
+                cursor: "pointer",
               }}
             >
               <div className="card-body p-5 d-flex flex-column">
@@ -116,6 +127,24 @@ export default function FeaturesOne() {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .feature-card:hover {
+          transform: translateY(-10px) scale(1.03);
+          box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+          border-color: #5b76f7 !important;
+        }
+        @media (max-width: 767.98px) {
+          .feature-card {
+            border-radius: 1.2rem !important;
+            min-width: 95vw !important;
+            max-width: 98vw !important;
+          }
+          .card-body {
+            padding: 2rem !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
