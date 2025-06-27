@@ -43,9 +43,9 @@ const MachineriesAndTools = () => {
             src="/img/nyra/1.jpeg"
             alt="Machinery Tools"
             className={styles.image}
-            width={500} // You need to specify width and height
-            height={300} // Adjust these values as needed
-            // You can also add layout="responsive" if you want responsive behavior
+            width={500} 
+            height={300} 
+            
           />
           <Image
             src="/img/nyra/2.jpeg"
