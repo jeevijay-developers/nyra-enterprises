@@ -1,6 +1,6 @@
 /* MachineriesAndTools.module.css */
 .container {
-  padding: 6rem;
+  padding: 1rem;
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   flex-direction: row;
 }
 .imageContainer {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -34,7 +34,7 @@
 }
 
 .table {
-  width: 50%;
+  width: 60%;
   border-collapse: collapse;
   margin: 0 auto; /* Center the table horizontally */
 }
@@ -81,19 +81,14 @@
   .table td {
     padding: 0.5rem;
   }
-
+  .sectiontitle {
+    font-size: 1.9rem;
+  }
   .heading {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .imageContainer {
-    flex-direction: row;
-    /* flex-wrap: wrap;  */
-    justify-content: center;
-    align-items: center;
-    gap: 2rem; 
-    padding-left: 0;
-    margin-top: 1rem;
-    width: 40%;
-    margin-bottom: 2rem;
+    flex-direction: column;
+   margin-bottom:1rem;
   }
 }
