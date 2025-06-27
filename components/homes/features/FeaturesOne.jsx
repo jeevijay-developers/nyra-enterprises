@@ -138,7 +138,7 @@ export default function FeaturesOne() {
           .feature-card {
             border-radius: 1.2rem !important;
             min-width: 95vw !important;
-            max-width: 98vw !important;
+            max-width: 100vw !important;
           }
           .card-body {
             padding: 2rem !important;

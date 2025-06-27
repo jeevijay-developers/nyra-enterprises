@@ -108,6 +108,7 @@ const ProjectExecution = () => {
           box-shadow: 0 4px 32px rgba(44, 62, 80, 0.1);
           border: 1px solid #e3eefe;
           margin-bottom: 2rem;
+          overflow: hidden;
         }
         .execution-card h2,
         .execution-card h4 {
@@ -123,7 +124,8 @@ const ProjectExecution = () => {
             border-radius: 1.2rem !important;
           }
           .execution-card :global(img) {
-            max-width: 90vw !important;
+            width: 100% !important;
+            max-width: 100% !important;
             margin-bottom: 1rem;
           }
         }
