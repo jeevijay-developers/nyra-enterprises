@@ -59,17 +59,17 @@ export default function FeaturesOne() {
                 </div>
                 <div className="flex-grow-1">
                   <p className="text-muted mb-2">
-                    We are a customer focused company that values our customers as
-                    the foundation of our business. We facilitate our customers to
-                    build remarkable values based on information and communication
-                    services innovation.
+                    We are a customer focused company that values our customers
+                    as the foundation of our business. We facilitate our
+                    customers to build remarkable values based on information
+                    and communication services innovation.
                   </p>
                   <p className="text-muted mb-0">
                     We strive to give our client's competitive edge in their
-                    respective industries through the provision of market leading
-                    communication products. We are dedicated to enhancing their
-                    service levels, improving their workplace efficiencies and
-                    increasing their productivity levels.
+                    respective industries through the provision of market
+                    leading communication products. We are dedicated to
+                    enhancing their service levels, improving their workplace
+                    efficiencies and increasing their productivity levels.
                   </p>
                 </div>
               </div>
@@ -112,14 +112,14 @@ export default function FeaturesOne() {
                 <div className="flex-grow-1">
                   <p className="text-muted mb-2">
                     We strive to provide the most reliable and superb
-                    communication solutions that exceed customer needs by enabling
-                    us to be a preferred data solution partner.
+                    communication solutions that exceed customer needs by
+                    enabling us to be a preferred data solution partner.
                   </p>
                   <p className="text-muted mb-0">
                     We will continue to be an independent company to create,
-                    develop and maintain the specialized city based Telecom Optic
-                    Fiber Cable Network and to be part of our national requirement
-                    to enhance economical growth path.
+                    develop and maintain the specialized city based Telecom
+                    Optic Fiber Cable Network and to be part of our national
+                    requirement to enhance economical growth path.
                   </p>
                 </div>
               </div>
@@ -137,8 +137,9 @@ export default function FeaturesOne() {
         @media (max-width: 767.98px) {
           .feature-card {
             border-radius: 1.2rem !important;
-            min-width: 95vw !important;
-            max-width: 100vw !important;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            
           }
           .card-body {
             padding: 2rem !important;
