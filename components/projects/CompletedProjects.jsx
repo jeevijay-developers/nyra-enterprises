@@ -7,8 +7,11 @@ const CompletedProjects = () => {
       <h2 className="text-center fw-bold mb-4" style={{ color: "#000" }}>
         Projects Completed Successfully
       </h2>
-      <div className="table-responsive">
-        <table className="completed-projects-table w-100">
+      <div className="table-responsive" style={{ overflow: "auto" }}>
+        <table
+          className="completed-projects-table w-100"
+          style={{ overflow: "auto" }}
+        >
           <thead>
             <tr>
               <th>Nature of Activity</th>
@@ -45,7 +48,8 @@ const CompletedProjects = () => {
             <tr>
               <td>Customer Premise Equipment Installed</td>
               <td>
-                R 4G Giga Fiber-JIO, FTTX (Surat, Uttarakhand, Punjab, Uttar Pradesh)
+                R 4G Giga Fiber-JIO, FTTX (Surat, Uttarakhand, Punjab, Uttar
+                Pradesh)
               </td>
               <td>Nos</td>
               <td>50000+</td>
@@ -60,7 +64,7 @@ const CompletedProjects = () => {
           background: #fff;
           border-radius: 1.2rem;
           overflow: hidden;
-          box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+          box-shadow: 0 4px 24px rgba(44, 62, 80, 0.1);
         }
         .completed-projects-table th,
         .completed-projects-table td {

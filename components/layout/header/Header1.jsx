@@ -74,7 +74,7 @@ export default function Header1() {
             </div> */}
           </div>
 
-          <div className="headerMobile__right">
+          {/* <div className="headerMobile__right">
             <button
               onClick={() => pageNavigate("/tour-list-1")}
               className="d-flex"
@@ -88,7 +88,7 @@ export default function Header1() {
             >
               <i className="icon-person text-18"></i>
             </button>
-          </div>
+          </div> */}
 
           <div className="header__right">
             {/* <Destinations />

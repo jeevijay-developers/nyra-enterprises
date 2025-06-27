@@ -77,29 +77,9 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
                       ? { maxHeight: "1200px", transition: "0.6s" }
                       : { maxHeight: "0px", transition: "0.6s" }
                   }
-                >
-                  {/* {elm.submenu.map((elm2, i2) => (
-                    <li key={i2} className="">
-                      <Link
-                        className={
-                          pathname.split("/")[1] == elm2.href?.split("/")[1]
-                            ? "activeMenu"
-                            : ""
-                        }
-                        style={{ paddingLeft: "15px", fontSize: "17px" }}
-                        href={elm2.href}
-                      >
-                        {elm2.label}
-                      </Link>
-                    </li>
-                  ))} */}
-                </ul>
+                ></ul>
               </li>
             ))}
-
-            {/* <li className="menuNav__item">
-              <Link href="/contact">Contact</Link>
-            </li> */}
           </ul>
         </div>
 
